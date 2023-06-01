@@ -40,7 +40,7 @@
       <a href="/index.html" class="home-page"><img src="img/empty.svg"  alt="Главная страница"></a>
       <a href="#" class="hotel-page">Гостиницы</a>
       <ul class="infrastructure">
-        <li><h3>Инфраструктура:</h3>
+        <li><h4>Инфраструктура:</h4>
         </li>
         <li>Бассейн
         </li>
@@ -49,8 +49,8 @@
         <li>Wi-Fi
         </li>
       </ul>
-      <ul class="infrastructure">
-        <li><h3>Тип жилья:</h3>
+      <ul class="kind">
+        <li><h4>Тип жилья:</h4>
         </li>
         <li>Гостиница
         </li>
@@ -59,6 +59,24 @@
         <li>Апартаменты
         </li>
       </ul>
+      <ul class="price">
+        <li><h4>Стоимость, ₽:</h4>
+        </li>
+        <input type="number" id="against" name="against"
+          min="0" max="9000" placeholder="от">
+
+        <input type="number" id="before" name="before"
+          min="0" max="9000" placeholder="до">
+
+       <input type="range" id="volume" name="volume"
+          min="0" max="9000">
+      </ul>
+      <div class="pressbutton">
+          <button>Применить
+          </button>
+          <button>Сбросить
+          </button>
+        </div>
     </section>
     <section class=""></section>
     <section class="subscription">
