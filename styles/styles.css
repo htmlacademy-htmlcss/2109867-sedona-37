@@ -16,13 +16,24 @@ body{
   margin-left: 30%;
 }
 
+header{
+  font-weight: 700;
+  size:16px;
+}
+h2,
+h3{
+  font-weight: 700;
+}
+li{
+  list-style-type:none
+}
+.strainer{
+  background-image: url("/images/background-img/filter.jpg");
+  height: 412px;
+  width: 1200px;
+  position: relative;
 
-
-
-
-
-
-
+}
 
 
 
