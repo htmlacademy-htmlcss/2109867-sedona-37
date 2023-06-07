@@ -1,6 +1,20 @@
-body {
+body{
   font-family: "PT Sans", sans-serif;
 }
+.welcome{
+  background-image: url("/images/background-img/index-background.jpg");
+  height: 485px;
+  width: 1200px;
+  position: relative;
+}
+.divider{
+  position: absolute;
+  bottom: 0;
+}
+.welcome-text{
+  position: absolute;
+  margin-left: 30%;
+}
 
 
 
@@ -54,15 +68,15 @@ body {
 
 @font-face {
   font-family: "PT Sans";
-  src: url("/fonts/ptsans-400.woff2") format("woff2"),
-       url("/fonts/ptsans-400.woff2") format("woff");
+  src: url("/fonts/ptsans-400.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "PT Sans";
-  src: url("/fonts/ptsans-700.woff2") format("woff2"),
-       url("/fonts/ptsans-700.woff") format("woff");
+  src: url("/fonts/ptsans-700.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
