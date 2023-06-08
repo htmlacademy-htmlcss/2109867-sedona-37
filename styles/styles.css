@@ -17,31 +17,181 @@ body{
 }
 .navigation-item{
   font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #000000;
+}
+.navigation-item-knob{
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+
+}
+.citi-small, .services-come{
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+
+}
+.citi-cooler, .services-expert{
+  font-family: 'PT Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 26px;
+text-align: center;
+color: #333333;
+}
+.citi-checker-chief, .citi-chief{
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.citi-chief{
+  color: #000000;
+}
+.citi-checker-chief{
+  color: #FFFFFF;
+}
+.citi-checker-inferior,.citi-inferior{
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  }
+.citi-checker-inferior{
+    color: #FFFFFF;
+  }
+.citi-inferior{
+    color: #000000;
+  }
+.services-option{
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  }
+.explanation{
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #333333;
+}
+.interest{
+  font-family: 'PT Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+text-align: center;
+text-transform: uppercase;
+color: #000000;
+
+}
+.proposal{
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+
+}
+.input{
+  font-family: 'PT Sans';
 font-style: normal;
 font-weight: 700;
 font-size: 20px;
-line-height: 24px;
+line-height: 36px;
 display: flex;
-text-transform: capitalize;
-}
-.navigation-item-knob{
-font-family: 'PT Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 20px;
 align-items: center;
 text-align: center;
-display: flex;
-}
+text-transform: uppercase;
+color: #FFFFFF;
 
-h2,
-h3{
-  font-weight: 700;
+}
+.distribution{
+  font-family: 'PT Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+text-transform: uppercase;
+color: #FFFFFF;
+
+}
+.scout{
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #FFFFFF;
+
+}
+.signature{
+  font-family: 'PT Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 36px;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+
+}
+.footer-phone{
+  font-family: 'PT Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 40px;
+text-align: center;
+text-transform: uppercase;
+color: #000000;
+
 }
 li{
   list-style-type:none
 }
+.subscription{
+  background-image: url("/images/background-img/subscribe.jpg");
+  width: 1200px;
+  height: 414.86px;
+  position: relative;
+  }
 .strainer{
   background-image: url("/images/background-img/filter.jpg");
   height: 412px;
