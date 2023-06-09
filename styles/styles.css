@@ -1,5 +1,6 @@
 body{
   font-family: "PT Sans", sans-serif;
+  font-style: normal;
 }
 .welcome{
   background-image: url("/images/background-img/index-background.jpg");
@@ -16,8 +17,7 @@ body{
   margin-left: 30%;
 }
 .navigation-item{
-  font-family: 'PT Sans';
-  font-style: normal;
+
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -25,8 +25,6 @@ body{
   color: #000000;
 }
 .navigation-item-knob{
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -38,8 +36,6 @@ body{
 
 }
 .citi-small, .services-come{
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -49,8 +45,6 @@ body{
 
 }
 .citi-cooler, .services-expert{
-  font-family: 'PT Sans';
-font-style: normal;
 font-weight: 400;
 font-size: 22px;
 line-height: 26px;
@@ -58,8 +52,6 @@ text-align: center;
 color: #333333;
 }
 .citi-checker-chief, .citi-chief{
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -73,8 +65,6 @@ color: #333333;
   color: #FFFFFF;
 }
 .citi-checker-inferior,.citi-inferior{
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -87,8 +77,6 @@ color: #333333;
     color: #000000;
   }
 .services-option{
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -97,8 +85,6 @@ color: #333333;
   color: #000000;
   }
 .explanation{
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -106,8 +92,6 @@ color: #333333;
   color: #333333;
 }
 .interest{
-  font-family: 'PT Sans';
-font-style: normal;
 font-weight: 700;
 font-size: 30px;
 line-height: 36px;
@@ -117,8 +101,6 @@ color: #000000;
 
 }
 .proposal{
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -127,8 +109,6 @@ color: #000000;
 
 }
 .input{
-  font-family: 'PT Sans';
-font-style: normal;
 font-weight: 700;
 font-size: 20px;
 line-height: 36px;
@@ -140,8 +120,6 @@ color: #FFFFFF;
 
 }
 .distribution{
-  font-family: 'PT Sans';
-font-style: normal;
 font-weight: 700;
 font-size: 30px;
 line-height: 36px;
@@ -150,8 +128,6 @@ color: #FFFFFF;
 
 }
 .scout{
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -160,8 +136,6 @@ color: #FFFFFF;
 
 }
 .signature{
-  font-family: 'PT Sans';
-font-style: normal;
 font-weight: 700;
 font-size: 20px;
 line-height: 36px;
@@ -173,8 +147,6 @@ color: #FFFFFF;
 
 }
 .footer-phone{
-  font-family: 'PT Sans';
-font-style: normal;
 font-weight: 400;
 font-size: 40px;
 line-height: 40px;
@@ -184,8 +156,6 @@ color: #000000;
 
 }
 .hotel-sedona{
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
@@ -193,8 +163,6 @@ color: #000000;
 
 }
 .hotel-page{
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
@@ -202,8 +170,6 @@ color: #000000;
 
 }
 .infrastructure-type{
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -212,8 +178,6 @@ color: #000000;
 
 }
 .infrastructure-filter, .kind-filter{
-  font-family: 'PT Sans';
-font-style: normal;
 font-weight: 400;
 font-size: 18px;
 line-height: 23px;
@@ -221,8 +185,6 @@ color: #FFFFFF;
 
 }
 .pressbutton-apply,.pressbutton-reset{
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -234,8 +196,6 @@ color: #FFFFFF;
 
 }
 .results-hotel{
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -244,8 +204,6 @@ color: #FFFFFF;
 
 }
 .results-cheap{
-font-family: 'PT Sans';
-font-style: normal;
 font-weight: 400;
 font-size: 18px;
 line-height: 21px;
@@ -253,8 +211,6 @@ color: #333333;
 
 }
 .hotel-name{
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -262,8 +218,6 @@ color: #333333;
 
 }
 .hotel-price{
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -271,8 +225,6 @@ color: #333333;
   color: #333333;
 }
 .card-name{
-  font-family: 'PT Sans';
-font-style: normal;
 font-weight: 400;
 font-size: 18px;
 line-height: 21px;
@@ -280,8 +232,6 @@ color: #333333;
 
 }
 .detailed{
-  font-family: 'PT Sans';
-font-style: normal;
 font-weight: 700;
 font-size: 16px;
 line-height: 20px;
@@ -293,8 +243,6 @@ color: #FFFFFF;
 
 }
 .hotel-favorites{
-  font-family: 'PT Sans';
-font-style: normal;
 font-weight: 700;
 font-size: 16px;
 line-height: 20px;
@@ -306,8 +254,6 @@ color: #FFFFFF;
 
 }
 .stock{
-  font-family: 'PT Sans';
-font-style: normal;
 font-weight: 400;
 font-size: 16px;
 line-height: 20px;
