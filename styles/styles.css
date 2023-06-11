@@ -11,12 +11,14 @@ body{
   line-height: 24px;
   text-transform: capitalize;
   color: #000000;
+  text-decoration: none;
   }
 .welcome{
   background-image: url("/images/background-img/index-background.jpg");
   height: 485px;
   width: 1200px;
   position: relative;
+  background-color: #000000;
 }
 .divider{
   position: absolute;
@@ -163,6 +165,7 @@ line-height: 40px;
 text-align: center;
 text-transform: uppercase;
 color: #000000;
+text-decoration: none;
 
 }
 .hotel-sedona{
@@ -272,6 +275,7 @@ text-transform: uppercase;
 color: #333333;
 
 }
+/* Можно ли указать общий селектор li? */
 li{
   list-style-type:none
 }
