@@ -284,12 +284,14 @@ li{
   width: 1200px;
   height: 414.86px;
   position: relative;
+  background-color: #000000;
   }
 .strainer{
   background-image: url("/images/background-img/filter.jpg");
   height: 412px;
   width: 1200px;
   position: relative;
+  background-color: #000000;
 
 }
 
