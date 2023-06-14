@@ -1,17 +1,60 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url("/fonts/ptsans-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  src: url("/fonts/ptsans-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+html{
+  height:100%;
+}
 body{
+  margin: 0;
+  display: flex;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-size: 16px;
   line-height: 24px;
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: #E5E5E5;
 }
-.main-nav,.navigation-item{font-weight: 700;
+.page-container {
+    width: 1200px;
+    background: #FFFFFF;
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+ }
+.container {
+    margin: 0 auto;
+    width: 1200px;
+    flex-grow: 1;
+   }
+.main-nav{
+  width: 1200px;
+  height: 64px;
+  }
+.navigation{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.main-nav,.navigation-item{
+  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   text-transform: capitalize;
   color: #000000;
   text-decoration: none;
+  list-style-type:none;
   }
 .welcome{
   background-image: url("/images/background-img/index-background.jpg");
@@ -19,6 +62,11 @@ body{
   width: 1200px;
   position: relative;
   background-color: #000000;
+}
+.welcome-text{
+
+  padding-top:51.4px;
+  padding-bottom:25,23px ;
 }
 .divider{
   position: absolute;
@@ -40,11 +88,10 @@ body{
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  display: flex;
-  align-items: center;
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+  background-color:#756157 ;
 
 }
 .citi-small, .services-come{
@@ -124,11 +171,10 @@ color: #000000;
 font-weight: 700;
 font-size: 20px;
 line-height: 36px;
-display: flex;
-align-items: center;
 text-align: center;
 text-transform: uppercase;
 color: #FFFFFF;
+background-color:#756157 ;
 
 }
 .distribution{
@@ -151,8 +197,6 @@ color: #FFFFFF;
 font-weight: 700;
 font-size: 20px;
 line-height: 36px;
-display: flex;
-align-items: center;
 text-align: center;
 text-transform: uppercase;
 color: #FFFFFF;
@@ -201,8 +245,6 @@ color: #FFFFFF;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  display: flex;
-  align-items: center;
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -244,12 +286,10 @@ line-height: 21px;
 color: #333333;
 
 }
-.detailed{
+.detailed, .hotel-favorites{
 font-weight: 700;
 font-size: 16px;
 line-height: 20px;
-display: flex;
-align-items: center;
 text-align: center;
 text-transform: uppercase;
 color: #FFFFFF;
@@ -259,8 +299,6 @@ color: #FFFFFF;
 font-weight: 700;
 font-size: 16px;
 line-height: 20px;
-display: flex;
-align-items: center;
 text-align: center;
 text-transform: uppercase;
 color: #FFFFFF;
@@ -275,10 +313,7 @@ text-transform: uppercase;
 color: #333333;
 
 }
-/* Можно ли указать общий селектор li? */
-li{
-  list-style-type:none
-}
+
 .subscription{
   background-image: url("/images/background-img/subscribe.jpg");
   width: 1200px;
@@ -293,61 +328,4 @@ li{
   position: relative;
   background-color: #000000;
 
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@font-face {
-  font-family: "PT Sans";
-  src: url("/fonts/ptsans-400.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "PT Sans";
-  src: url("/fonts/ptsans-700.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
 }
