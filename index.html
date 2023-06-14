@@ -6,7 +6,9 @@
     <link rel="stylesheet" href="/styles/styles.css">
   </head>
   <body>
+    <div class="page-container">
     <header class="main-header">
+      <div class="container">
       <nav class="main-nav">
         <ul class="navigation">
           <li class="navigation-item">
@@ -21,8 +23,6 @@
           <li class="navigation-item">
             <a href="/catalog.html" class="navigation-item">Гостиницы</a>
           </li>
-        </ul>
-        <ul>
           <li class="navigation-item">
             <a href="#" class="navigation-item"><img src="/images/svg/search.svg" width="18" height="18" alt="Поиск"></a>
           </li>
@@ -34,15 +34,20 @@
           </li>
         </ul>
       </nav>
+    </div>
     </header>
-    <main>
+    <div class="slider-wrapper">
+      <div class="container"></div>
+      </div>
+    <main class="main-container">
+      <div class="container">
       <section class="welcome">
         <img src="/images/svg/divider.svg" class="divider" width="1200" height="57" alt="Делитель">
-        <h1 class="visually-hidden"></h1>
+        <h1 class="visually-hidden">
         <img src="/images/svg/welcome.svg" class="welcome-text" width="458" height="352" alt="Welcome">
-      </section>
+      </h1></section>
       <section class="citi">
-        <h2 class="citi-small" >Седона — небольшой городок в Аризоне,
+        <h2 class="citi-small" >Седона — небольшой городок в Аризоне,<br>
           заслуживающий большего!</h2>
           <p class="citi-cooler">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
           <ul>
@@ -70,6 +75,7 @@
             </li>
         </ul>
       </section>
+
       <section class="services">
         <h2 class="services-come">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
           <p class="services-expert">Опытный персонал и качественное обслуживание!</p>
@@ -94,7 +100,8 @@
             </li>
           </ul>
           </section>
-          <section class="offer">
+
+        <section class="offer">
             <h2 class="interest">Заинтересовались?</h2>
               <p class="proposal">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
               <a href="#" class="input">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
@@ -109,8 +116,11 @@
                 </button>
               </form>
           </section>
+      </div>
     </main>
+
     <footer class="main-footer">
+      <div class="container">
       <ul class="social">
         <li class="social-item">
           <a href= "https://vk.com/htmlacademy"><img src="/images/social/vkontakte.svg" width="24" height="14"  alt="Vkontakte"></a>
@@ -129,5 +139,7 @@
         </li>
       </ul>
     </footer>
+    </div>
+  </div>
   </body>
 </html>
