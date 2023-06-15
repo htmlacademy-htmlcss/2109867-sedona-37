@@ -1,0 +1,384 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url("/fonts/ptsans-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  src: url("/fonts/ptsans-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+html{
+  height:100%;
+}
+body{
+  margin: 0;
+  display: flex;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  background-color: #E5E5E5;
+}
+.page-container {
+    width: 1200px;
+    background: #FFFFFF;
+    padding: 0;
+
+ }
+.container {
+    margin: 0 auto;
+    width: 1200px;
+    flex-grow: 1;
+   }
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+
+}
+.navigation-list{
+  display: flex;
+  width: 510px;
+  margin: 0;
+  padding: 0;
+}
+.navigation-user{
+  max-width: 250px;
+  margin-left: auto;
+}
+.navigation-link{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #000000;
+  text-decoration: none;
+  list-style-type:none;
+  }
+.welcome{
+  background-image: url("/images/background-img/index-background.jpg");
+  height: 485px;
+  width: 1200px;
+  position: relative;
+  background-color: #000000;
+}
+.welcome-text{
+  padding-top:51.4px;
+  padding-bottom:25,23px ;
+  position: absolute;
+  margin-left: 30%;
+}
+.divider{
+  position: absolute;
+  bottom: 0;
+}
+.navigation-item{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #000000;
+}
+.knob{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color:#756157 ;
+
+}
+.citi-small, .services-come{
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+
+}
+.citi-box{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0 0;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "up-left up-right up-right"
+    "center-left center-center center-right"
+    "down-left down-left down-right";
+}
+.up-left { grid-area: up-left; }
+
+.up-right { grid-area: up-right; }
+
+.center-left { grid-area: center-left; }
+
+.down-left { grid-area: down-left; }
+
+.down-right { grid-area: down-right; }
+
+.center-center { grid-area: center-center; }
+
+.center-right { grid-area: center-right; }
+
+.citi-cooler, .services-expert{
+font-weight: 400;
+font-size: 22px;
+line-height: 26px;
+text-align: center;
+color: #333333;
+}
+.citi-checker-chief, .citi-chief{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.citi-chief{
+  color: #000000;
+}
+.citi-checker-chief{
+  color: #FFFFFF;
+}
+.citi-checker-inferior,.citi-inferior{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  }
+.citi-checker-inferior{
+    color: #FFFFFF;
+  }
+.citi-inferior{
+    color: #000000;
+  }
+  .choice{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    width: 1200px;
+  }
+.offer{
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 96px 304px;
+gap: 10px;}
+
+.subscription{
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 10px;
+width: 1200px;
+}
+
+.services-option{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  }
+.explanation{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #333333;
+}
+.interest{
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+text-align: center;
+text-transform: uppercase;
+color: #000000;
+
+}
+.social{
+display: flex;
+flex-grow: 0;
+}
+.proposal{
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+
+}
+.input{
+font-weight: 700;
+font-size: 20px;
+line-height: 36px;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+background-color:#756157 ;
+
+}
+.distribution{
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+text-transform: uppercase;
+color: #FFFFFF;
+
+}
+.scout{
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #FFFFFF;
+
+}
+.signature{
+font-weight: 700;
+font-size: 20px;
+line-height: 36px;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+
+}
+.footer-phone{
+font-weight: 400;
+font-size: 40px;
+line-height: 40px;
+text-align: center;
+text-transform: uppercase;
+color: #000000;
+text-decoration: none;
+
+}
+.hotel-sedona{
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  color: #FFFFFF;
+
+}
+.hotel-page{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+
+}
+.infrastructure-type{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+
+}
+.infrastructure-filter, .kind-filter{
+font-weight: 400;
+font-size: 18px;
+line-height: 23px;
+color: #FFFFFF;
+
+}
+.pressbutton-apply,.pressbutton-reset{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+
+}
+.results-hotel{
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+
+}
+.results-cheap{
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+color: #333333;
+
+}
+.hotel-name{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+
+}
+.hotel-price{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: right;
+  color: #333333;
+}
+.card-name{
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+color: #333333;
+
+}
+.detailed, .hotel-favorites{
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+
+}
+.hotel-favorites{
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+
+}
+.stock{
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+text-align: center;
+text-transform: uppercase;
+color: #333333;
+
+}
+
+.subscription{
+  background-image: url("/images/background-img/subscribe.jpg");
+  width: 1200px;
+  height: 414.86px;
+  position: relative;
+  background-color: #000000;
+  }
+.strainer{
+  background-image: url("/images/background-img/filter.jpg");
+  height: 412px;
+  width: 1200px;
+  position: relative;
+  background-color: #000000;
+
+}
