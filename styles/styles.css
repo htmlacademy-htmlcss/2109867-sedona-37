@@ -28,26 +28,31 @@ body{
 .page-container {
     width: 1200px;
     background: #FFFFFF;
-    display: flex;
     padding: 0;
-    flex-direction: column;
+
  }
 .container {
     margin: 0 auto;
     width: 1200px;
     flex-grow: 1;
    }
-.main-nav{
-  width: 1200px;
-  height: 64px;
-  }
-.navigation{
+.navigation {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: stretch;
+  width: 1200px;
+  margin: 0 auto;
+
 }
-.main-nav,.navigation-item{
+.navigation-list{
+  display: flex;
+  width: 510px;
+  margin: 0;
+  padding: 0;
+}
+.navigation-user{
+  max-width: 250px;
+  margin-left: auto;
+}
+.navigation-link{
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -64,27 +69,23 @@ body{
   background-color: #000000;
 }
 .welcome-text{
-
   padding-top:51.4px;
   padding-bottom:25,23px ;
+  position: absolute;
+  margin-left: 30%;
 }
 .divider{
   position: absolute;
   bottom: 0;
 }
-.welcome-text{
-  position: absolute;
-  margin-left: 30%;
-}
 .navigation-item{
-
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   text-transform: capitalize;
   color: #000000;
 }
-.navigation-item-knob{
+.knob{
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -103,6 +104,31 @@ body{
   color: #000000;
 
 }
+.citi-box{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0 0;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "up-left up-right up-right"
+    "center-left center-center center-right"
+    "down-left down-left down-right";
+}
+.up-left { grid-area: up-left; }
+
+.up-right { grid-area: up-right; }
+
+.center-left { grid-area: center-left; }
+
+.down-left { grid-area: down-left; }
+
+.down-right { grid-area: down-right; }
+
+.center-center { grid-area: center-center; }
+
+.center-right { grid-area: center-right; }
+
 .citi-cooler, .services-expert{
 font-weight: 400;
 font-size: 22px;
@@ -135,6 +161,29 @@ color: #333333;
 .citi-inferior{
     color: #000000;
   }
+  .choice{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    width: 1200px;
+  }
+.offer{
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 96px 304px;
+gap: 10px;}
+
+.subscription{
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 10px;
+width: 1200px;
+}
+
 .services-option{
   font-weight: 700;
   font-size: 24px;
@@ -158,6 +207,10 @@ text-align: center;
 text-transform: uppercase;
 color: #000000;
 
+}
+.social{
+display: flex;
+flex-grow: 0;
 }
 .proposal{
   font-weight: 400;
