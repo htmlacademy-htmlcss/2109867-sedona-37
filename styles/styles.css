@@ -110,23 +110,23 @@ body{
   gap: 0 0;
   grid-auto-flow: row;
   grid-template-areas:
-    "up-left up-right up-right"
-    "center-left center-center center-right"
-    "down-left down-left down-right";
+    "up-hay up-staw up-staw"
+    "heart-hay heart heart-staw"
+    "down-hay down-hay down-staw";
 }
-.up-left { grid-area: up-left; }
+.up-hay { grid-area: up-hay; }
 
-.up-right { grid-area: up-right; }
+.up-staw { grid-area: up-staw; }
 
-.center-left { grid-area: center-left; }
+.heart-hay { grid-area: heart-hay; }
 
-.down-left { grid-area: down-left; }
+.down-hay { grid-area: down-hay; }
 
-.down-right { grid-area: down-right; }
+.down-staw{ grid-area: down-staw; }
 
-.center-center { grid-area: center-center; }
+.heart { grid-area: heart; }
 
-.center-right { grid-area: center-right; }
+.heart-staw{ grid-area: heart-staw; }
 
 .citi-cooler, .services-expert{
 font-weight: 400;
