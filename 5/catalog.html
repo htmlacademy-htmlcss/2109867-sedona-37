@@ -8,7 +8,6 @@
 </head>
 <body>
   <div class="page-container">
-
     <header class="main-header">
       <div class="container">
         <nav class="navigation">
@@ -39,12 +38,13 @@
           </ul>
         </nav>
       </div>
-  </header>
-
+    </header>
+  </div>
   <div class="slider-wrapper">
-    <div class="container"></div>
+    <div class="container">
     </div>
-  <main>
+    </div>
+  <main class="main-container">
     <div class="container">
     <section class="strainer">
       <h1 class="hotel-sedona">Гостиницы Седоны
@@ -52,7 +52,7 @@
       <h2 class="visually-hidden"></h2>
       <h3 class="visually-hidden"></h3>
       <a href="/index.html" class="home-page"><img src="/images/svg/house.svg" width="12" height="12" alt="Главная страница"></a>
-      <img src="/images/svg/breadcrumbs.svg" width="6.39" height="9.94">
+      <img src="/images/svg/breadcrumbs.svg" class="home-page" width="6.39" height="9.94">
       <a href="#" class="hotel-page">Гостиницы</a>
       <ul class="infrastructure">
         <li>
@@ -101,12 +101,12 @@
         <select class="results-cheap">
           <option>Сначала дешевые</option>
         </select>
-        <ul>
-          <li class="table"><img src="/images/svg/table.svg" width="16" height="14" alt="Таблица">
+        <ul class="results-hotel">
+          <li class="results-hotel table"><img src="/images/svg/table.svg" width="16" height="14" alt="Таблица">
           </li>
-          <li class="full"><img src="/images/svg/individual.svg" width="16" height="14" alt="По одному">
+          <li class="results-hotel full"><img src="/images/svg/individual.svg" width="16" height="14" alt="По одному">
           </li>
-          <li class="list"><img src="/images/svg/list.svg" width="16" height="14" alt="Список">
+          <li class="results-hotel list"><img src="/images/svg/list.svg" width="16" height="14" alt="Список">
           </li>
         </ul>
        <div class="hotel-card">
@@ -158,17 +158,17 @@
             <a class="stock" href="#">Рейтинг: 5,0</a>
         </div>
         <div class="pagination">
-          <a class="active" href="#">1</a>
-          <a href="#">2</a>
-          <a href="#">3</a>
-          <a href="#">4</a>
-          <a href="#">...</a>
-          <a href="#">10</a>
+          <a class="active pagination" href="#">1</a>
+          <a class="pagination" href="#">2</a>
+          <a class="pagination" href="#">3</a>
+          <a class="pagination" href="#">4</a>
+          <a class="pagination" href="#">...</a>
+          <a class="pagination" href="#">10</a>
         </div>
     </section>
-    <section class="subscription">
-      <h2 class="distribution">Подпишитесь на рассылку</h2>
-        <p class="scout">Только полезная информация и никакого спама, честное бойскаутское!</p>
+    <section class="subscription catalog">
+      <h2 class="distribution catalog">Подпишитесь на рассылку</h2>
+        <p class="scout catalog">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form action="https://echo.htmlacademy.ru/" method="post">
           <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
           <button class="button newsletter-button" type="submit">
@@ -181,24 +181,24 @@
   <footer class="main-footer">
     <div class="container">
     <ul class="social-list">
-      <li class="social-list-item">
+      <li class="social-list item-social">
         <a href= "https://vk.com/htmlacademy"><img src="/images/social/vkontakte.svg" width="24" height="14"  alt="Vkontakte"></a>
       </li>
-      <li class="social-list-item">
+      <li class="social-list item-social">
         <a href="https://t.me/htmlacademy "><img src="/images/social//telegram.svg" width="24" height="14"  alt="Telegram"></a>
       </li>
-      <li class="social-list-item">
+      <li class="social-list item-social">
         <a href="https://www.youtube.com/user/htmlacademyru"><img src="/images/social/yotube.svg" width="24" height="14"  alt="Youtube"></a>
       </li>
-      <li class="social-list-item">
+      <li class="social-list item-phone">
         <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </li>
-      <li class="social-item">
+      <li class="social-list item-academy">
         <a class="footer-logo"  href="https://htmlacademy.ru/"><img src="images/svg/logo_htmlacademy.svg" width="114.9" height="32.9"  alt="html academy"></a>
       </li>
     </ul>
-    </footer>
     </div>
+    </footer>
   </div>
 </body>
 </html>
