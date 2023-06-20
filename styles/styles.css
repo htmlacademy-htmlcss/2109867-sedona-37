@@ -65,7 +65,7 @@ body{
   list-style-type:none;
   }
 .welcome{
-  background-image: url("images/background-img/index-background.jpg");
+  background-image: url(../images/background-img/index-background.jpg);
   height: 485px;
   width: 1200px;
   position: relative;
@@ -123,7 +123,7 @@ body{
 .up-staw { grid-area: up-staw;
   width: 800px;
   height: 385px;
-  background: url("images/photo-1.jpg");
+  background: url(../images/photo-1.jpg);
   flex: none;
   order: 1;
   align-self: stretch;
@@ -144,7 +144,7 @@ body{
   grid-area: down-hay;
   width: 800px;
   height: 385px;
-  background: url("images/photo-2.jpg");
+  background: url(../images/photo-2.jpg);
   flex: none;
   order: 0;
   align-self: stretch;
