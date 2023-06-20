@@ -65,7 +65,7 @@ body{
   list-style-type:none;
   }
 .welcome{
-  background-image: url("images/background-img/index-background.jpg");
+  background-image: url("/images/background-img/index-background.jpg");
   height: 485px;
   width: 1200px;
   position: relative;
