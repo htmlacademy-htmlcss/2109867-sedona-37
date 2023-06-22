@@ -608,11 +608,21 @@ color: #333333;
   width: 1200px;
   margin: 0 auto;
 }
-
-.social-list{
+.container-footer{
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0;
+  width: 1060px;
+  min-height: 50px;
+  margin: 0 auto;
+  padding: 40px 70px 30px;
+  list-style-type:none;
+    background-color: #FFFFFF;
+}
+.social-list{
+  display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 142px;
 }
