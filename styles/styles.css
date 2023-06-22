@@ -104,10 +104,7 @@ body{
   padding: 8px 34px;
 }
 /* Шапка сайта*/
-
-.main-container{
-
-}
+/*welcome */
 .welcome{
   background-image: url(../images/background-img/index-background.jpg);
   height: 485px;
@@ -124,6 +121,13 @@ body{
   position: absolute;
   bottom: 0;
 }
+/*welcome */
+.container-citi{
+  display: block;
+  margin: auto;
+  padding: 69px;
+  margin-bottom: 21px;
+}
 .citi-small, .services-come{
   font-weight: 700;
   font-size: 30px;
@@ -131,13 +135,19 @@ body{
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  margin: 0;
+  padding: 0;
 
 }
 .citi-box{
+  width: 1200px;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  gap: 0 0;
   grid-auto-flow: row;
   list-style-type:none;
   grid-template-areas:
@@ -145,9 +155,13 @@ body{
     "heart-hay heart heart-staw"
     "down-hay down-hay down-staw";
 }
-.up-hay { grid-area: up-hay; }
+.up-hay {
+  grid-area: up-hay;
 
-.up-staw { grid-area: up-staw;
+ }
+
+.up-staw {
+  grid-area: up-staw;
   width: 800px;
   height: 385px;
   background: url(../images/photo-1.jpg);
@@ -157,7 +171,8 @@ body{
   flex-grow: 0;
 }
 
-.heart-hay { grid-area: heart-hay;
+.heart-hay {
+   grid-area: heart-hay;
   padding: 103px 85px;
   gap: 10px;
   left: 0%;
@@ -167,7 +182,7 @@ body{
   background: #83b3d31f;
 }
 
-.down-hay {
+.down-hay{
   grid-area: down-hay;
   width: 800px;
   height: 385px;
@@ -177,7 +192,8 @@ body{
   align-self: stretch;
   flex-grow: 0;}
 
-.down-staw{ grid-area: down-staw; }
+.down-staw{
+  grid-area: down-staw; }
 
 .heart {
    grid-area: heart;
@@ -190,9 +206,9 @@ body{
   background: #83b3d333;
 }
 
-.heart-staw{ grid-area: heart-staw;
+.heart-staw{
+  grid-area: heart-staw;
   padding: 103px 85px;
-
   right: 0%;
   left: 66.67%;
   top: 0%;
@@ -208,21 +224,17 @@ body{
   text-transform: uppercase;
   color: #000000;
 }
-.undertone{
+.citi-checker{
+  margin: 0;
+  padding: 0;
+}
+.undertone,.citi-cooler, .services-expert{
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
   color: #333333;
-}
-
-.citi-cooler, .services-expert{
-font-weight: 400;
-font-size: 22px;
-line-height: 26px;
-text-align: center;
-color: #333333;
 }
 .citi-checker-chief, .citi-chief{
   font-weight: 700;
@@ -240,11 +252,10 @@ color: #333333;
 }
 .down-staw,.up-hay{
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 103px 85px;
-  width: 400px;
+
+
   height: 385px;
   background: #82B3D3;
 }
@@ -272,21 +283,43 @@ color: #333333;
 flex-direction: column;
 align-items: flex-start;
 padding: 96px 304px;
-gap: 10px;}
+gap: 10px;
+}
 
 .subscription{
-  display: flex;
+  padding: 0;
+  margin: 0;
+display: flex;
 flex-direction: column;
 justify-content: center;
-align-items: center;
-gap: 10px;
-width: 1200px;
+background-size: cover;
+background-repeat: no-repeat;
+background-image: url(../images/background-img/subscribe.jpg);
+height: 414.86px;
+background-color: #000000;
 }
 .choice{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
   list-style-type:none;
 }
+.services-choice{
+  background-color: #83B3D31F;
+  width: 230px;
+  padding: 81px 85px;
+}
+.burger{
+  background-color: #FFFFFF;
+}
 .services-figure{
-
+  display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 .services-option{
   font-weight: 700;
@@ -297,6 +330,14 @@ width: 1200px;
   color: #000000;
 
   }
+.offer{
+  display: block;
+  width: 592px;
+  min-height: 214px;
+  margin: auto;
+  padding: 96px 304px;
+  text-align: center;
+}
 .explanation{
   font-weight: 400;
   font-size: 18px;
@@ -318,22 +359,24 @@ display: flex;
 flex-grow: 0;
 }
 .proposal{
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 26px;
-  text-align: center;
-  color: #333333;
+  margin-bottom: 60px;
 
 }
-.input{
+.knob-offer{
 font-weight: 700;
 font-size: 20px;
 line-height: 36px;
 text-align: center;
 text-transform: uppercase;
 color: #FFFFFF;
+text-decoration: none;
+padding: 12px 50px;
 background-color:#756157 ;
 
+}
+.subscription-container{
+  text-align: center;
+  padding: 96px 258px 104px;
 }
 .distribution{
 font-weight: 700;
@@ -349,6 +392,7 @@ color: #FFFFFF;
   line-height: 26px;
   text-align: center;
   color: #FFFFFF;
+  margin-bottom: 60px;
 
 }
 .strainer{
@@ -546,13 +590,6 @@ color: #333333;
 
 }
 
-.subscription{
-  background-image: url("/images/background-img/subscribe.jpg");
-  width: 1200px;
-  height: 414.86px;
-  position: relative;
-  background-color: #000000;
-  }
 .catalog{
   background-image: none;
   background-color: #FFFFFF;
@@ -566,14 +603,11 @@ color: #333333;
   background-color: #000000;
 
 }
-/*.main-footer{
-  display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 1060px;
-    min-height: 50px;
-    margin: 0 auto;
-    padding: 40px 70px 30px;}*/
+.main-footer{
+  background-color: #FFFFFF;
+  width: 1200px;
+  margin: 0 auto;
+}
 
 .social-list{
   display: flex;
