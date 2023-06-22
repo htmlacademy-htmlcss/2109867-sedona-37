@@ -1,13 +1,13 @@
 @font-face {
   font-family: "PT Sans";
-  src: url("fonts/ptsans-400.woff2") format("woff2");
+  src: url(../fonts/ptsans-400.woff2) format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "PT Sans";
-  src: url("fonts/ptsans-700.woff2") format("woff2");
+  src: url(../fonts/ptsans-700.woff2) format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -22,13 +22,19 @@ body{
   min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 22px;
+  line-height: 26px;
   color: #000000;
-  background-color: #E5E5E5;
+  background-color: #F2F2F2;
 }
 .main-container{
   flex-grow: 1;
+}
+.main-header{
+  background-color: #fff;
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
 }
 .container {
   margin: 0 auto;
@@ -36,24 +42,35 @@ body{
   flex-grow: 1;
  }
 .page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
     width: 1200px;
     background: #FFFFFF;
     margin: 0 auto;
+    box-shadow: 0 0 15px #00000033;
  }
 .navigation {
   display: flex;
-  width: 1200px;
-  margin: 0 auto;
+  padding: 0 70px;
+  align-items: center;
 }
 
 .navigation-list{
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  width: 507px;
+  width: 632px;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: -6px;
+  list-style-type:none;
 }
 .navigation-user{
   max-width: 270px;
   margin-left: auto;
+  justify-content:space-around;
 }
 .navigation-link{
   font-weight: 700;
@@ -63,6 +80,28 @@ body{
   color: #000000;
   text-decoration: none;
   list-style-type:none;
+  display: block;
+  padding: 20px 16px 20px 16px;
+  }
+  .navigation-item{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #000000;
+  }
+
+ .knob {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color:#756157;
+    border-radius: 4px;
+    padding: 8px 34px;
+
   }
 .welcome{
   background-image: url(../images/background-img/index-background.jpg);
@@ -81,23 +120,6 @@ body{
   position: absolute;
   bottom: 0;
 }
-.navigation-item{
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-  text-transform: capitalize;
-  color: #000000;
-}
-.knob{
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  background-color:#756157 ;
-
-}
 .citi-small, .services-come{
   font-weight: 700;
   font-size: 30px;
@@ -113,6 +135,7 @@ body{
   grid-template-rows: 1fr 1fr 1fr;
   gap: 0 0;
   grid-auto-flow: row;
+  list-style-type:none;
   grid-template-areas:
     "up-hay up-staw up-staw"
     "heart-hay heart heart-staw"
@@ -217,7 +240,6 @@ color: #333333;
   justify-content: center;
   align-items: center;
   padding: 103px 85px;
-
   width: 400px;
   height: 385px;
   background: #82B3D3;
@@ -234,13 +256,13 @@ color: #333333;
 .citi-inferior{
     color: #000000;
   }
-  .choice{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0;
-    width: 1200px;
-  }
+.choice{
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  padding: 0;
+  width: 1200px;
+}
 .offer{
   display: flex;
 flex-direction: column;
@@ -256,7 +278,12 @@ align-items: center;
 gap: 10px;
 width: 1200px;
 }
+.choice{
+  list-style-type:none;
+}
+.services-figure{
 
+}
 .services-option{
   font-weight: 700;
   font-size: 24px;
@@ -264,6 +291,7 @@ width: 1200px;
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+
   }
 .explanation{
   font-weight: 400;
