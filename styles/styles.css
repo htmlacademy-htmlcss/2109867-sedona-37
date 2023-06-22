@@ -30,6 +30,7 @@ body{
 .main-container{
   flex-grow: 1;
 }
+/* Шапка сайта*/
 .main-header{
   background-color: #fff;
   display: flex;
@@ -40,6 +41,7 @@ body{
   margin: 0 auto;
   width: 1200px;
   flex-grow: 1;
+  background-color: #FFFFFF;
  }
 .page-container {
   display: flex;
@@ -83,26 +85,29 @@ body{
   display: block;
   padding: 20px 16px 20px 16px;
   }
-  .navigation-item{
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-    text-transform: capitalize;
-    color: #000000;
-  }
+.navigation-item{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #000000;
+}
+.knob {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color:#756157;
+  border-radius: 4px;
+  padding: 8px 34px;
+}
+/* Шапка сайта*/
 
- .knob {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    background-color:#756157;
-    border-radius: 4px;
-    padding: 8px 34px;
+.main-container{
 
-  }
+}
 .welcome{
   background-image: url(../images/background-img/index-background.jpg);
   height: 485px;
@@ -111,8 +116,7 @@ body{
   background-color: #000000;
 }
 .welcome-text{
-  padding-top:5px;
-  padding-bottom:25,23px ;
+  padding-top:51px;
   position: absolute;
   margin-left: 30%;
 }
@@ -562,6 +566,15 @@ color: #333333;
   background-color: #000000;
 
 }
+/*.main-footer{
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1060px;
+    min-height: 50px;
+    margin: 0 auto;
+    padding: 40px 70px 30px;}*/
+
 .social-list{
   display: flex;
   flex-direction: row;
