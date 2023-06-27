@@ -495,6 +495,29 @@ text-decoration: none;
   flex-grow: 0;
   text-decoration:none;
 }
+
+/*форма*/
+.infrastructure{
+  display: flex;
+  margin: 0 auto;
+}
+.filter-group{
+  margin: 0;
+  padding: 0;
+  width: 150px;
+  min-height: 157px;
+  border: none;
+}
+.filter-group:first-child{
+  margin-right: 70px;
+}
+.list-group{
+  list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 23px;
+}
 .infrastructure-type{
   font-weight: 700;
   font-size: 20px;
@@ -519,6 +542,8 @@ color: #FFFFFF;
   color: #FFFFFF;
 
 }
+/*форма*/
+
 .visually-hidden{
   display: block;
   position: absolute;

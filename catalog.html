@@ -62,48 +62,71 @@
       </li>
       </ol>
       <h2 class="visually-hidden" aria-hidden="true">Список товаров с фильтрами</h2>
-      <h3 class="visually-hidden"></h3>
-      <ul class="infrastructure">
-        <li>
-          <h4 class="infrastructure-type">Инфраструктура:</h4>
+      <form class="infrastructure" action="https://echo.htmlacademy.ru/" method="get">
+        <fieldset class="infrastructure-group filter-group">
+          <legend class="infrastructure-type">Инфраструктура:</legend>
+      <ul class="infrastructure-list list-group">
+        <li class="infrastructure-filter">
+          <label class="control">
+            <input class="control-input" type="checkbox" name="pool" checked>Бассейн
+          </label>
         </li>
-        <li class="infrastructure-filter"><input class="control-input" type="checkbox" name="pool" checked>Бассейн
+        <li class="infrastructure-filter">
+          <label class="control">
+            <input class="control-input" type="checkbox" name="parking" checked>Парковка
+          </label>
         </li>
-        <li class="infrastructure-filter"><input class="control-input" type="checkbox" name="parking" checked>Парковка
-        </li>
-        <li class="infrastructure-filter"><input class="control-input" type="checkbox" name="Wi-Fi">Wi-Fi
-        </li>
-      </ul>
-      <ul class="kind">
-        <li>
-          <h4 class="infrastructure-type">Тип жилья:</h4>
-        </li>
-        <li class="kind-filter"><input class="control-input" type="radio" name="kind-filter" value="kind-filter" checked>Гостиница
-        </li>
-        <li class="kind-filter"> <input class="control-input" type="radio" name="kind-filter" value="kind-filter">Мотель
-        </li>
-        <li class="kind-filter"> <input class="control-input" type="radio" name="kind-filter" value="kind-filter">Апартаменты
+        <li class="infrastructure-filter">
+           <label class="control">
+            <input class="control-input" type="checkbox" name="Wi-Fi">Wi-Fi
+          </label>
         </li>
       </ul>
-      <ul class="price">
-        <li>
-          <h4 class="infrastructure-type">Стоимость, ₽:</h4>
+    </fieldset>
+    <fieldset class="kind filter-group">
+      <legend class="kind-type">Тип жилья:</legend>
+      <ul class="kind-group list-group">
+        <li class="kind-filter">
+          <label class="control">
+            <input class="control-input" type="radio" name="kind-filter" value="kind-filter" checked>Гостиница
+          </label>
         </li>
-        <input type="number" id="against" name="against"
-          min="0" max="9000" placeholder="от">
+        <li class="kind-filter">
+          <label class="control">
+            <input class="control-input" type="radio" name="kind-filter" value="kind-filter">Мотель
+          </label>
+        </li>
+        <li class="kind-filter">
+          <label class="control">
+            <input class="control-input" type="radio" name="kind-filter" value="kind-filter">Апартаменты
+          </label>
+        </li>
+      </ul>
+    </fieldset>
+    <fieldset class="price filter-group">
+      <legend class="price-type">Стоимость, ₽:</legend>
+        <div class="price-group">
+          <label class="control">
+            <span class="input-against sign">от</span>
+            <input class="control-input start-price" type="text" name="control-group" value="0">
+          </label>
+          <label class="control">
+            <span class="input-before sign">до</span>
+            <input class="control-input last-price" type="text" name="control-group" value="9000">
+          </label>
 
-        <input type="number" id="before" name="before"
-          min="0" max="9000" placeholder="до">
+          </div>
+          <input type="range" id="volume" name="volume"
+            min="0" max="9000">
 
-       <input type="range" id="volume" name="volume"
-          min="0" max="9000">
-      </ul>
+    </fieldset>
       <div class="pressbutton">
           <button class="pressbutton-apply">Применить
           </button>
           <button class="pressbutton-reset">Сбросить
           </button>
         </div>
+      </form>
     </section>
     <section class="results">
       <h2 class="results-hotel">Найдено гостиниц: 38</h2>
