@@ -17,7 +17,7 @@
                <a href="#"><img src="images/svg/logo.svg" width="140" height="70" alt="Лого"></a>
             </li>
             <li class="navigation-item">
-              <a href="#" class="navigation-link">Главная</a>
+              <a href="index.html" class="navigation-link">Главная</a>
             </li>
             <li class="navigation-item">
               <a href="#" class="navigation-link">О Седоне</a>
@@ -42,61 +42,92 @@
     </header>
 
   </div>
-  <div class="slider-wrapper">
-    <div class="container">
-    </div>
-    </div>
   <main class="main-container">
     <div class="container">
     <section class="strainer">
       <h1 class="hotel-sedona">Гостиницы Седоны
       </h1>
-      <h2 class="visually-hidden"></h2>
-      <h3 class="visually-hidden"></h3>
-      <a href="index.html" class="home-page"><img src="images/svg/house.svg" width="12" height="12" alt="Главная страница"></a>
-      <img src="images/svg/breadcrumbs.svg" class="home-page" width="6.39" height="9.94">
-      <a href="#" class="hotel-page">Гостиницы</a>
-      <ul class="infrastructure">
-        <li>
-          <h4 class="infrastructure-type">Инфраструктура:</h4>
-        </li>
-        <li class="infrastructure-filter"><input class="control-input" type="checkbox" name="pool" checked>Бассейн
-        </li>
-        <li class="infrastructure-filter"><input class="control-input" type="checkbox" name="parking" checked>Парковка
-        </li>
-        <li class="infrastructure-filter"><input class="control-input" type="checkbox" name="Wi-Fi">Wi-Fi
-        </li>
-      </ul>
-      <ul class="kind">
-        <li>
-          <h4 class="infrastructure-type">Тип жилья:</h4>
-        </li>
-        <li class="kind-filter"><input class="control-input" type="radio" name="kind-filter" value="kind-filter" checked>Гостиница
-        </li>
-        <li class="kind-filter"> <input class="control-input" type="radio" name="kind-filter" value="kind-filter">Мотель
-        </li>
-        <li class="kind-filter"> <input class="control-input" type="radio" name="kind-filter" value="kind-filter">Апартаменты
-        </li>
-      </ul>
-      <ul class="price">
-        <li>
-          <h4 class="infrastructure-type">Стоимость, ₽:</h4>
-        </li>
-        <input type="number" id="against" name="against"
-          min="0" max="9000" placeholder="от">
 
-        <input type="number" id="before" name="before"
-          min="0" max="9000" placeholder="до">
-
-       <input type="range" id="volume" name="volume"
-          min="0" max="9000">
+      <ol class="breadcrumbs-main">
+        <li class="breadcrumbs">
+          <a href="index.html" class="home-page">
+          <img src="images/svg/house.svg" width="12" height="12" alt="Главная страница">
+          </a>
+        </li>
+      <li class="breadcrumbs">
+        <img src="images/svg/breadcrumbs.svg" class="home-arrow" width="6.39" height="9.94">
+      </li>
+      <li class="breadcrumbs">
+        <a href="catalog.html" class="hotel-page">Гостиницы
+        </a>
+      </li>
+      </ol>
+      <h2 class="visually-hidden" aria-hidden="true">Список товаров с фильтрами</h2>
+      <form class="infrastructure" action="https://echo.htmlacademy.ru/" method="get">
+        <fieldset class="infrastructure-group filter-group">
+          <legend class="infrastructure-type">Инфраструктура:</legend>
+      <ul class="infrastructure-list list-group">
+        <li class="infrastructure-filter">
+          <label class="control">
+            <input class="control-input" type="checkbox" name="pool" checked>Бассейн
+          </label>
+        </li>
+        <li class="infrastructure-filter">
+          <label class="control">
+            <input class="control-input" type="checkbox" name="parking" checked>Парковка
+          </label>
+        </li>
+        <li class="infrastructure-filter">
+           <label class="control">
+            <input class="control-input" type="checkbox" name="Wi-Fi">Wi-Fi
+          </label>
+        </li>
       </ul>
+    </fieldset>
+    <fieldset class="kind filter-group">
+      <legend class="kind-type">Тип жилья:</legend>
+      <ul class="kind-group list-group">
+        <li class="kind-filter">
+          <label class="control">
+            <input class="control-input" type="radio" name="kind-filter" value="kind-filter" checked>Гостиница
+          </label>
+        </li>
+        <li class="kind-filter">
+          <label class="control">
+            <input class="control-input" type="radio" name="kind-filter" value="kind-filter">Мотель
+          </label>
+        </li>
+        <li class="kind-filter">
+          <label class="control">
+            <input class="control-input" type="radio" name="kind-filter" value="kind-filter">Апартаменты
+          </label>
+        </li>
+      </ul>
+    </fieldset>
+    <fieldset class="price filter-group">
+      <legend class="price-type">Стоимость, ₽:</legend>
+        <div class="price-group">
+          <label class="control">
+            <span class="input-against sign">от</span>
+            <input class="control-input start-price" type="text" name="control-group" value="0">
+          </label>
+          <label class="control">
+            <span class="input-before sign">до</span>
+            <input class="control-input last-price" type="text" name="control-group" value="9000">
+          </label>
+
+          </div>
+          <input type="range" id="volume" name="volume"
+            min="0" max="9000">
+
+    </fieldset>
       <div class="pressbutton">
           <button class="pressbutton-apply">Применить
           </button>
           <button class="pressbutton-reset">Сбросить
           </button>
         </div>
+      </form>
     </section>
     <section class="results">
       <h2 class="results-hotel">Найдено гостиниц: 38</h2>
