@@ -39,14 +39,13 @@
         </nav>
       </div>
     </header>
-
   </div>
+
   <main class="main-container">
     <div class="container">
     <section class="strainer">
       <h1 class="hotel-sedona">Гостиницы Седоны
       </h1>
-
       <ol class="breadcrumbs-main">
         <li class="breadcrumbs">
           <a href="index.html" class="home-page">
@@ -112,11 +111,9 @@
             <span class="input-before sign">до</span>
             <input class="control-input last-price" type="text" name="control-group" value="9000">
           </label>
-
           </div>
           <input type="range" id="volume" name="volume"
             min="0" max="9000">
-
     </fieldset>
       <div class="pressbutton">
           <button class="pressbutton-apply knob">Применить
@@ -126,19 +123,25 @@
         </div>
       </form>
     </section>
+
     <section class="results">
-      <h2 class="results-hotel">Найдено гостиниц: 38</h2>
-        <select class="results-cheap">
-          <option>Сначала дешевые</option>
-        </select>
-        <ul class="results-hotel">
-          <li class="results-hotel table"><img src="images/svg/table.svg" width="16" height="14" alt="Таблица">
-          </li>
-          <li class="results-hotel full"><img src="images/svg/individual.svg" width="16" height="14" alt="По одному">
-          </li>
-          <li class="results-hotel list"><img src="images/svg/list.svg" width="16" height="14" alt="Список">
-          </li>
-        </ul>
+      <div class="results-container">
+        <h2 class="results-title">Найдено гостиниц: 38</h2>
+          <select class="results-cheap" >
+          <option >Сначала дешевые</option>
+          </select>
+          <ul class="results-hotel">
+            <li class="results-item ">
+              <img src="images/svg/table.svg" class="elem table" width="16" height="14" alt="Таблица">
+            </li>
+            <li class="results-item ">
+              <img src="images/svg/individual.svg" class="elem" width="16" height="14" alt="По одному">
+            </li>
+            <li class="results-item ">
+              <img src="images/svg/list.svg" class="elem" width="16" height="14" alt="Список">
+            </li>
+          </ul>
+      </div>
        <div class="hotel-card">
             <img src="images/hotel/hotel-1.jpg" width="300" height="212" alt="Amara Resort">
             <h3 class="hotel-name">Amara Resort & Spa</h3>
