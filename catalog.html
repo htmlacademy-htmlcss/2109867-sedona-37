@@ -13,7 +13,7 @@
 
           <ul class="navigation-list">
             <li class="navigation-item navigation-logo">
-               <a href="#"><img src="images/svg/logo.svg" width="140" height="70" alt="Лого"></a>
+               <a href="index.html"><img src="images/svg/logo.svg" width="140" height="70" alt="Лого"></a>
             </li>
             <li class="navigation-item">
               <a href="index.html" class="navigation-link">Главная</a>
@@ -240,26 +240,31 @@
             </div>
           </li>
         </ul>
+        <ul>
 
+        </ul>
         <div class="pagination">
-          <a class="active pagination" href="#">1</a>
-          <a class="pagination" href="#">2</a>
-          <a class="pagination" href="#">3</a>
-          <a class="pagination" href="#">4</a>
-          <a class="pagination" href="#">...</a>
-          <a class="pagination" href="#">10</a>
+          <a class="active pagination-item" href="#">1</a>
+          <a class="pagination-item" href="#">2</a>
+          <a class="pagination-item" href="#">3</a>
+          <a class="pagination-item" href="#">4</a>
+          <a class="clear pagination-item" href="#">...</a>
+          <a class="pagination-item" href="#">10</a>
         </div>
     </section>
-    <section class="subscription catalog">
-      <h2 class="distribution catalog">Подпишитесь на рассылку</h2>
-        <p class="scout catalog">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form action="https://echo.htmlacademy.ru/" method="post">
-          <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
-          <button class="button newsletter-button" type="submit">
-            <span class="signature">Подписаться</span>
-          </button>
-        </form>
-    </section>
+    <section class="subscription colorless">
+      <div class="subscription-container">
+        <h2 class="distribution colorless">Подпишитесь на рассылку</h2>
+          <p class="scout colorless">Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
+          <form class="newsletter-form"  action="https://echo.htmlacademy.ru/" method="post">
+            <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+            <button class="button newsletter-button" type="submit">
+              <span class="signature">Подписаться</span>
+            </button>
+          </form>
+      </div>
+      </section>
+
     </div>
   </main>
 
