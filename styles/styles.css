@@ -97,6 +97,29 @@ body{
   line-height: 24px;
   text-transform: capitalize;
   color: #000000;
+
+}
+.like{
+  display: block;
+  position: relative;
+  margin: 0;
+  min-width: 20px;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.favorites-item{
+  position: absolute;
+    padding: 5px 4px;
+    border-radius: 50%;
+    top: 11px;
+    right: 4px;
+    background-color: #7DB54F;
+    background-repeat: 50%;
+    color: #fff;
+    font-size: 10px;
+    line-height: 10px;
 }
 .knob {
   font-weight: 700;
