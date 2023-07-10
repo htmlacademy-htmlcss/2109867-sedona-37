@@ -1134,3 +1134,198 @@ margin-right: auto;
   background-color: #ffffff;
   color: #000000;
 }
+/*модальное окно*/
+.modal{
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.80);
+}
+.modal-main{
+  position: relative;
+  margin: auto;
+  padding: 64px 70px;
+  width: 577px;
+  border-radius: 30px;
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
+}
+.modal-close{
+  position: absolute;
+  top: 64px;
+  right: 52px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: #F2F2F2;
+  background-image: url(../images/svg/cross.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+}
+.modal-title{
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 64px;
+  font-size: 30px;
+}
+.field-group{
+  display: flex;
+  position: relative;
+  margin: 0;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 48px;
+}
+.date-in{
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 577px;
+}
+.field-group label{
+  font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    box-sizing: border-box;
+}
+.calendar-icon{
+  position: absolute;
+  width: 16px;
+  height: 15px;
+  top: 17px;
+  right: 21px;
+  background-image: url(../images/svg/calendar.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.search-form-field{
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  width: 440px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #F2F2F2;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.search-form-field[type=text] {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.field-info{
+  position: absolute;
+  top: 52px;
+  left: 157px;
+  color: #333333;
+  margin: 0;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: normal;
+
+}
+.error {
+  color: #FF5757;}
+.field-people{
+  margin: 0;
+  margin-right: 88px;
+  width: 110px;
+  min-height: 48px;
+  text-align: center;
+  vertical-align: middle;
+  box-sizing: border-box;
+  appearance: none;
+
+}
+
+.options-wrapper{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 48px;
+}
+.adults-label {
+  margin-right: 46px;
+}
+.children-label {
+  margin-right: 83px;
+}
+.minus {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 14px;
+  left: 10px;
+  border: none;
+  cursor: pointer;
+}
+.plus {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 14px;
+  right: 97px;
+  border: none;
+}
+.tooltip {
+position: absolute;
+margin-top: -7px;
+margin-left: 0;
+width: 16px;
+height: 16px;
+}
+
+.tooltip-toggle {
+  padding: 0;
+  border: none;
+  display: block;
+  margin-left: 59px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #83B3D3;
+}
+.tooltip-text {
+  position: relative;
+  display: none;
+  padding: 19px 18px 22px 22px;
+  top: 15px;
+  left: -56px;
+  width: 256px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  border-radius: 10px;
+  background-color: #333;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.30);
+  box-sizing: border-box;
+}
+  .knob-modal{
+    padding: 18px;
+    width: 100%;
+    border-radius: 10px;
+    font-family: inherit;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    background-color: #82B3D3;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+
+  }
