@@ -335,7 +335,6 @@ body{
   justify-content: center;
   align-items: center;
 
-
   height: 385px;
   background: #82B3D3;
 }
@@ -497,7 +496,7 @@ color: #FFFFFF;
   line-height: 26px;
   text-align: center;
   color: #FFFFFF;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 
 }
 .footer-phone{
