@@ -199,7 +199,7 @@ body{
   text-align: center;
   text-transform: uppercase;
   color: #000000;
-  margin: 0;
+  margin: -4px;
   padding: 0;
 
 }
@@ -211,7 +211,7 @@ body{
   justify-content: space-between;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto ;
+  grid-template-rows: 1fr 1fr 1fr ;
   grid-auto-flow: row;
   list-style-type:none;
   grid-template-areas:
@@ -237,7 +237,7 @@ body{
 
 .heart-hay {
   grid-area: heart-hay;
-  padding: 111px 85px;
+  padding: 112px 85px;
   gap: 10px;
   left: 0%;
   right: 66.67%;
@@ -261,7 +261,7 @@ body{
 
 .heart {
    grid-area: heart;
-  padding: 111px 85px;
+  padding: 112px 85px;
   gap: 10px;
   left: 33.33%;
   right: 33.33%;
@@ -272,7 +272,7 @@ body{
 
 .heart-staw{
   grid-area: heart-staw;
-  padding: 111px 85px;
+  padding: 112px 85px;
   right: 0%;
   left: 66.67%;
   top: 0%;
@@ -285,7 +285,6 @@ body{
   line-height: 36px;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 22px;
 
 }
 .citi-checker{
@@ -293,22 +292,22 @@ body{
   padding: 0;
 }
 .citi-chief::after{
-  margin: 44px auto 14px;
+  margin: 30px auto 28px;
   width: 60px;
   height: 2px;
   background-color:#0000003b;
   content: "";
   display: block;
 }
-.citi-checker-chief::after{
-  margin: 14px auto 14px;
+.citi-checker-inferior::before{
+  margin: 0 auto 28px;
   width: 60px;
   height: 2px;
   background-color:#ffffff9f;
   content: "";
   display: block;
 }
-.undertone,.citi-cooler, .services-expert{
+.citi-cooler, .services-expert{
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -324,7 +323,7 @@ body{
   text-transform: uppercase;
   color: #FFFFFF;
   margin: 0;
-  margin-bottom: 44px;
+  margin-bottom: 30px;
   padding: 0;
 }
 .citi-chief{
@@ -334,6 +333,9 @@ body{
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
+  padding: 1px;
+  margin: 0
+  ;
 }
 
 .down-staw,.up-hay{
@@ -358,13 +360,6 @@ body{
 .citi-inferior{
     color: #000000;
   }
-.choice{
-  display: flex;
-  flex-direction: row;
-  align-items:center;
-  padding: 0;
-  width: 1200px;
-}
 
 .subscription{
   padding: 0;
@@ -372,10 +367,10 @@ body{
 display: flex;
 flex-direction: column;
 justify-content: center;
-background-size: cover;
+
 background-repeat: no-repeat;
-background-image: url(../images/background-img/subscrib.jpg);
-height: 414.86px;
+background-image: url(../images/background-img/subscribe.jpg);
+min-height: 414.86px;
 background-color: #000000;
 }
 .choice{
@@ -388,7 +383,7 @@ background-color: #000000;
 .services-choice{
   background-color: #83B3D31F;
   width: 230px;
-  padding: 81px 85px;
+  padding: 54px 85px;
 }
 .burger{
   background-color: #FFFFFF;
@@ -396,7 +391,6 @@ background-color: #000000;
 .services-figure{
   display: block;
     margin: 0 auto;
-    margin-bottom: 30px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -408,24 +402,39 @@ background-color: #000000;
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  padding: 6px;
 
   }
- /* .offer{
-    display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 96px 304px;
-  gap: 10px;
-  }*/
-.offer{
+  .offer{
+    display: block;
+    width: 592px;
+    min-height: 214px;
+    margin: auto;
+    padding: 93px 304px;
+    text-align: center;
+}
+.search-hotel{
   display: block;
-
+  width: 592px;
   min-height: 214px;
   margin: auto;
-  padding: 96px 304px;
+  padding: 102px 304px;
   text-align: center;
-}
+  margin-bottom: -5px;
 
+}
+.undertone{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+
+}
+.undertone-search{
+  padding-bottom: 38px  ;
+}
 .explanation{
   font-weight: 400;
   font-size: 18px;
@@ -450,7 +459,7 @@ flex-grow: 0;
   margin-bottom: 60px;
 
 }
-.knob-offer{
+.knob-search{
 font-weight: 700;
 font-size: 20px;
 line-height: 36px;
@@ -458,13 +467,13 @@ text-align: center;
 text-transform: uppercase;
 color: #FFFFFF;
 text-decoration: none;
-padding: 12px 50px;
+padding: 12px 51px 14px 50px;
 background-color:#756157 ;
 
 }
 .subscription-container{
   text-align: center;
-  padding: 96px 258px 104px;
+  padding: 81px 258px 104px;
 
 }
 .newsletter-form{
@@ -492,6 +501,8 @@ background-color:#756157 ;
     border: none;
 }
 .distribution{
+  padding: 0;
+  margin: 14px;
 font-weight: 700;
 font-size: 30px;
 line-height: 36px;
@@ -505,7 +516,7 @@ color: #FFFFFF;
   line-height: 26px;
   text-align: center;
   color: #FFFFFF;
-  margin-bottom: 40px;
+  margin-bottom: 54px;
 
 }
 .footer-phone{
