@@ -95,37 +95,36 @@
 
       <section class="services">
         <div class="container-citi">
-          <h2 class="basic services-come">Приезжайте в Седону отдохнуть<br> в комфорте и уюте!</h2>
+          <h2 class="services-come">Приезжайте в Седону отдохнуть<br> в комфорте и уюте!</h2>
             <p class="undertone services-expert">Опытный персонал и качественное обслуживание!</p>
         </div>
-          <ul class="choice">
+      </section>
+        <ul class="choice">
             <li class="services-choice">
                <img src="images/svg/housing.svg" class="services-figure" width="75" height="72" alt="Жильё">
                <h3 class="services-option">Жильё</h3>
-                  <p class="explanation">Рекомендуем пожить в настоящем мотеле,
+                  <p class="explanation">Рекомендуем пожить<br> в настоящем мотеле,<br>
                 всё как в кино!</p>
             </li>
             <li class="services-choice burger">
               <img src="images/svg/food.svg" class="services-figure" width="75" height="72" alt="Еда">
                <h3 class="services-option">Еда</h3>
-                <p class="explanation">Всегда заказывайте
-                топовый фирменный бургер, вы не разочаруетесь!</p>
+                <p class="explanation">Всегда заказывайте<br>
+                топовый фирменный бургер,<br>  вы не разочаруетесь!</p>
             </li>
             <li class="services-choice">
-              <img src="images/svg/souvenirs.svg" class="services-figure" width="72" height="75" alt="Сувениры">
+              <img src="images/svg/souvenirs.svg" class="services-figure" width="68" height="75" alt="Сувениры">
                <h3 class="services-option">Сувениры</h3>
-                <p class="explanation">Не только китайского,
-                но и настоящего местного производства!</p>
+                <p class="explanation">Не только китайского,<br>
+                но и настоящего местного <br> производства!</p>
             </li>
           </ul>
+        <div class="search-hotel">
+            <h2 class="basic">Заинтересовались?</h2>
+              <p class="undertone undertone-search">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+              <a href="#" class="knob knob-search">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+        </div>
       </section>
-
-        <section class="offer">
-            <h2 class="basic ">Заинтересовались?</h2>
-              <p class="undertone">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-              <a href="#" class="knob knob-offer">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
-          </section>
-
           <section class="subscription">
           <div class="subscription-container">
             <h2 class="distribution">Подпишитесь на рассылку</h2>
@@ -144,18 +143,26 @@
     <footer class="main-footer">
       <div class="container-footer">
       <ul class="social-list">
-        <li class="social-list item-social">
-          <a href= "https://vk.com/htmlacademy"><img src="images/social/vkontakte.svg" width="24" height="14"  alt="Vkontakte"></a>
+        <li class="social-item vkontakte">
+          <a href= "https://vk.com/htmlacademy">
+            <span class="visually-hidden" aria-hidden="true"> ВКонтакте</span>
+           </a>
         </li>
-        <li class="social-list item-social">
-          <a href="https://t.me/htmlacademy "><img src="images/social/telegram.svg" width="24" height="14"  alt="Telegram"></a>
+        <li class="social-item telegram">
+          <a href="https://t.me/htmlacademy ">
+            <span class="visually-hidden" aria-hidden="true"> Телеграм</span>
+          </a>
         </li>
-        <li class="social-list item-social">
-          <a href="https://www.youtube.com/user/htmlacademyru"><img src="images/social/yotube.svg" width="24" height="14"  alt="Youtube"></a>
+        <li class="social-item youtube">
+          <a href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden" aria-hidden="true"> Ютуб</span>
+          </a>
         </li>
       </ul>
           <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-          <a class="footer-logo"  href="https://htmlacademy.ru/"><img src="images/svg/logo_htmlacademy.svg" width="114.9" height="32.9"  alt="html academy"></a>
+          <a class="footer-logo"  href="https://htmlacademy.ru/">
+            <span class="visually-hidden" aria-hidden="true"> html academy</span>
+          </a>
       </div>
     </footer>
     </div>
@@ -169,25 +176,25 @@
       <section class="modal-content">
         <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
         <form class="search-modal" method="post">
-          <p class="field-group">
+          <span class="field-group">
             <label class="date-in" for="date-in">Дата Заезда:
                 <span class="calendar-icon"></span>
                 <input class="search-form-field" type="text" name="date-in" id="date-in" value="27 апреля 2020">
                 <span class="error field-info">Мы не можем отправить вас в прошлое.</span>
             </label>
-          </p>
-          <p class="field-group">
+          </span>
+          <span class="field-group">
             <label class="date-in" for="date-out">Дата Выезда:
                 <span class="calendar-icon"></span>
                 <input class="search-form-field" type="text" name="date-out" id="date-out" value="1 сентября 2023">
                 <span class="field-info">На эти даты есть свободные номера. Пока есть.</span>
             </label>
-          </p>
+          </span>
 
           <div class="options-wrapper">
-            <p class="field-group">
+            <span class="field-group">
               <label class="adults-label" for="adults">Взрослые:</label>
-              </p>
+              </span>
               <div class="options-wrapper">
                 <input class="search-form-field field-people" type="number" name="adults" id="adults" value="2">
                 <button class="minus">
@@ -202,7 +209,7 @@
                 </button>
               </div>
 
-            <p class="field-group">
+            <span class="field-group">
               <label class="children-label" for="children">Дети:</label>
               <span class="tooltip">
                 <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
@@ -211,8 +218,8 @@
                   </svg>
                 </button>
                 <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
               </span>
-              </p>
               <div class="options-wrapper">
                 <input class="search-form-field field-people" type="number" name="children" id="children" value="2">
                 <button class="minus">
@@ -228,7 +235,7 @@
               </div>
 
           </div>
-          <button class="knob-modal">найти</button>
+          <button class="knob-modal" type="submit">найти</button>
         </form>
       </section>
     </div>
