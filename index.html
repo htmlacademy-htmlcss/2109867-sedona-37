@@ -175,25 +175,25 @@
       <section class="modal-content">
         <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
         <form class="search-modal" method="post">
-          <p class="field-group">
+          <span class="field-group">
             <label class="date-in" for="date-in">Дата Заезда:
                 <span class="calendar-icon"></span>
                 <input class="search-form-field" type="text" name="date-in" id="date-in" value="27 апреля 2020">
                 <span class="error field-info">Мы не можем отправить вас в прошлое.</span>
             </label>
-          </p>
-          <p class="field-group">
+          </span>
+          <span class="field-group">
             <label class="date-in" for="date-out">Дата Выезда:
                 <span class="calendar-icon"></span>
                 <input class="search-form-field" type="text" name="date-out" id="date-out" value="1 сентября 2023">
                 <span class="field-info">На эти даты есть свободные номера. Пока есть.</span>
             </label>
-          </p>
+          </span>
 
           <div class="options-wrapper">
-            <p class="field-group">
+            <span class="field-group">
               <label class="adults-label" for="adults">Взрослые:</label>
-              </p>
+              </span>
               <div class="options-wrapper">
                 <input class="search-form-field field-people" type="number" name="adults" id="adults" value="2">
                 <button class="minus">
@@ -208,7 +208,7 @@
                 </button>
               </div>
 
-            <p class="field-group">
+            <span class="field-group">
               <label class="children-label" for="children">Дети:</label>
               <span class="tooltip">
                 <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
@@ -217,8 +217,8 @@
                   </svg>
                 </button>
                 <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
               </span>
-              </p>
               <div class="options-wrapper">
                 <input class="search-form-field field-people" type="number" name="children" id="children" value="2">
                 <button class="minus">
