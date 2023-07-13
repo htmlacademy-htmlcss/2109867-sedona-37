@@ -1207,6 +1207,7 @@ margin-right: auto;
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.80);
+  z-index: 15;
 }
 .modal-main{
   position: relative;
