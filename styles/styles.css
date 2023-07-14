@@ -1241,157 +1241,162 @@ margin-right: auto;
   margin: 0;
   margin-bottom: 64px;
   font-size: 30px;
+  color: #000000;
+  text-align: left;
+}
+
+.search-modal{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 23px 88px;
 }
 .field-group{
+  width: 100%;
+  }
+
+  .date-in{
+    position: relative;
+}
+.search-modal label,.various-group label{
+
   display: flex;
-  position: relative;
-  margin: 0;
-  justify-content: space-between;
   align-items: center;
-  margin-bottom: 48px;
-}
-.date-in{
-  display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 577px;
-}
-.field-group label{
-  font-size: 20px;
-    line-height: 24px;
-    font-weight: 700;
-    box-sizing: border-box;
 }
 .calendar-icon{
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #000000;
+  margin-right: auto;
+
+}
+.search-field {
+  background-color: #F2F2F2;
+  border-radius: 4px;
+  border-style: none;
+  font-family: inherit;
+}
+.search-field[value] {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+}
+.search-field[type="text"] {
+  padding: 12px 20px;
+  position: relative;
+  width: 400px;
+}
+.date{
   position: absolute;
-  width: 16px;
-  height: 15px;
-  top: 17px;
+  padding: 10px;
+  cursor: pointer;
+  border-style: none;
   right: 21px;
   background-image: url(../images/svg/calendar.svg);
-  background-position: center;
+  background-color: transparent;
   background-repeat: no-repeat;
 }
-.search-form-field{
-  font-family: inherit;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 24px;
-  width: 440px;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  background-color: #F2F2F2;
-  box-sizing: border-box;
-  cursor: pointer;
-}
-.search-form-field[type=text] {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 24px;
-}
-
 .field-info{
-  position: absolute;
-  top: 52px;
-  left: 157px;
-  color: #333333;
   margin: 0;
-  font-size: 16px;
-  line-height: 21px;
-  font-weight: normal;
-
+    margin-left: 137px;
+    margin-top: 4px;
+    font-size: 16px;
+    line-height: 21px;
+    color: #333333;
+    padding: 0 20px;
 }
 .error {
-  color: #FF5757;}
-.field-people{
-  margin: 0;
-  margin-right: 88px;
-  width: 110px;
-  min-height: 48px;
-  text-align: center;
-  vertical-align: middle;
-  box-sizing: border-box;
-  appearance: none;
-
+  color: #FF5757;
 }
-
-.options-wrapper{
-  position: relative;
+.people-group{
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 23px;
+  width: 100%;
 }
-.adults-label {
-  margin-right: 46px;
+.modal-label {
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #000000;
+  margin-right: auto;
 }
-.children-label {
-  margin-right: 83px;
+.value-wrapper {
+  display: flex;
+  margin-left: 46px;
 }
-.minus {
-  padding: 0;
-  margin: 0;
-  position: absolute;
-  top: 14px;
-  left: 10px;
-  border: none;
+.minus, .plus{
+  background-color: #F2F2F2;
+  border-style: none;
+  padding: 26px 20px;
   cursor: pointer;
 }
-.plus {
-  padding: 0;
-  margin: 0;
-  position: absolute;
-  top: 14px;
-  right: 97px;
-  border: none;
-}
-.tooltip {
-position: absolute;
-margin-top: -7px;
-margin-left: 0;
-width: 16px;
-height: 16px;
-}
 
-.tooltip-toggle {
-  padding: 0;
-  border: none;
+.minus {
+  background-image: url(../images/svg/minus.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 4px 0 0 4px;
+}
+.plus {
+  background-image: url(../images/svg/plus.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 0 4px 4px 0;
+}
+.various-group[type="number"] {
+    padding: 14px 10px;
+    width: 31px;
+    border-radius: 0;
+}
+.various-group[value] {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;}
+.knob-modal{
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  padding: 18px 77px;
+  border-radius: 10px;
+  width: 100%;
+  margin-top: 17px;
+  background-color: #82B3D3;
+  color: #ffffff;
+
+}
+.tooltip-toggle{
+  margin-left: 10px;
   display: block;
-  margin-left: 59px;
   width: 26px;
   height: 26px;
   border-radius: 50%;
+  border-style: none;
   background-color: #83B3D3;
+  padding: 3px;
 }
 .tooltip-text {
-  position: relative;
   display: none;
-  padding: 19px 18px 22px 22px;
-  top: 15px;
-  left: -56px;
-  width: 256px;
+  background-color: #333333;
+  border-radius: 10px;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.30);
   font-size: 16px;
   line-height: 20px;
-  color: #fff;
-  border-radius: 10px;
-  background-color: #333;
-  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.30);
-  box-sizing: border-box;
+  font-weight: normal;
+  color: #ffffff;
+  padding: 20px 19px 23px 22px;
+  width: 256px;
+  position: absolute;
+  top: 39px;
+  left: -106px;
 }
-  .knob-modal{
-    padding: 18px;
-    width: 100%;
-    border-radius: 10px;
-    font-family: inherit;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 24px;
-    text-transform: uppercase;
-    background-color: #82B3D3;
-    box-sizing: border-box;
-    border: none;
-    cursor: pointer;
-
-  }
+.tooltip {
+  position: absolute;
+  top: 11px;
+  left: 48px;
+}
+.various-group:last-child {
+  position: relative;
+  margin-left: 82px;
+}

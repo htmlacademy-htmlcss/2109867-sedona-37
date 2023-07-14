@@ -168,74 +168,76 @@
   </div>
 
   <div class="modal">
+    <div class="modal modal-search">
+
     <div class="modal-main">
-      <button class="modal-close">
+      <button class="modal-close" type="submit">
         <span class="visually-hidden">Закрыть</span>
       </button>
       <section class="modal-content">
         <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-        <form class="search-modal" method="post">
+
+        <form class="search-modal" method="post" action="https://echo.htmlacademy.ru/">
           <span class="field-group">
-            <label class="date-in" for="date-in">Дата Заезда:
-                <span class="calendar-icon"></span>
-                <input class="search-form-field" type="text" name="date-in" id="date-in" value="27 апреля 2020">
-                <span class="error field-info">Мы не можем отправить вас в прошлое.</span>
+            <label class="date-in" for="date-in">
+                <span class="calendar-icon">Дата Заезда:</span>
+                  <input class="search-field" type="text" name="date-in" id="date-in" value="27 апреля 2020" placeholder="Укажите дату">
+                  <button class="date" type="button">
+                  <span class="visually-hidden">Изменить дату.</span>
+                </button>
             </label>
-          </span>
-          <span class="field-group">
-            <label class="date-in" for="date-out">Дата Выезда:
-                <span class="calendar-icon"></span>
-                <input class="search-form-field" type="text" name="date-out" id="date-out" value="1 сентября 2023">
-                <span class="field-info">На эти даты есть свободные номера. Пока есть.</span>
-            </label>
+            <p class="error field-info">Мы не можем отправить вас в прошлое.</p>
           </span>
 
-          <div class="options-wrapper">
-            <span class="field-group">
-              <label class="adults-label" for="adults">Взрослые:</label>
-              </span>
-              <div class="options-wrapper">
-                <input class="search-form-field field-people" type="number" name="adults" id="adults" value="2">
-                <button class="minus">
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 9V11H17V9H3Z" fill="#756157" fill-opacity="0.3"></path>
-                  </svg>
+          <span class="field-group">
+            <label class="date-in" for="date-out">
+                <span class="calendar-icon">Дата Выезда:</span>
+                <input class="search-field" type="text" name="date-out" id="date-out" value="1 сентября 2023" placeholder="Укажите дату">
+                <button class="date" type="button">
+                  <span class="visually-hidden">Изменить дату.</span>
                 </button>
-                <button class="plus">
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="#756157" fill-opacity="0.3"></path>
-                  </svg>
-                </button>
-              </div>
+            </label>
+            <p class="field-info">На эти даты есть свободные номера. Пока есть.</p>
+          </span>
 
-            <span class="field-group">
-              <label class="children-label" for="children">Дети:</label>
-              <span class="tooltip">
-                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
-                  <svg class="tooltip-info" width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path id="Vector" fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="white"></path>
-                  </svg>
-                </button>
+          <div class="people-group">
+            <label class="various-group" for="value">
+              <span class="modal-label">Взрослые:</span>
+                <div class="value-wrapper">
+                  <button class="minus" type="button">
+                    <span class="visually-hidden">Уменьшить количество.</span>
+                  </button>
+                  <input class="various-group" type="number" value="2">
+                  <button class="plus" type="button">
+                    <span class="visually-hidden">Увеличить количество.</span>
+                  </button>
+                </div>
+            </label>
+
+            <label class="various-group" for="children">
+              <span class="modal-label">Дети:</span>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="submit" aria-labelledby="tooltip-label-date">
+                    <svg class="tooltip-info" width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path id="Vector" fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="white"></path>
+                    </svg>
+                  </button>
                 <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
-                </span>
               </span>
-              <div class="options-wrapper">
-                <input class="search-form-field field-people" type="number" name="children" id="children" value="2">
-                <button class="minus">
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 9V11H17V9H3Z" fill="#756157" fill-opacity="0.3"></path>
-                  </svg>
+              <div class="value-wrapper">
+                <button class="minus" type="button">
+                  <span class="visually-hidden">Уменьшить количество.</span>
                 </button>
-                <button class="plus">
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="#756157" fill-opacity="0.3"></path>
-                  </svg>
+                <input class="various-group" type="number" value="2">
+                <button class="plus" type="button">
+                  <span class="visually-hidden">Увеличить количество.</span>
                 </button>
               </div>
+            </label>
 
-          </div>
-          <button class="knob-modal" type="submit">найти</button>
-        </form>
+        </div>
+          <button class="knob knob-modal " type="submit">НАЙТИ</button>
+      </form>
       </section>
     </div>
   </div>
