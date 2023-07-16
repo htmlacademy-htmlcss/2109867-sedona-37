@@ -163,6 +163,20 @@ body{
   border: none;
   cursor: pointer;
 }
+.knob:hover {
+  background-color:#615048;
+ outline: none;
+}
+.knob:focus {
+  background-color:#615048;
+ outline: none;
+}
+.knob:active{
+  background-color:#615048;
+  color: #ffffff 30%;
+  outline: none;
+}
+
 /* Шапка сайта*/
 /*welcome */
 .welcome{
@@ -501,6 +515,21 @@ background-color:#756157 ;
     padding: 8px 50px;
     border: none;
 }
+
+.newsletter-button:hover {
+  background-color:#68A2CA;
+ outline: none;
+}
+.newsletter-button:focus {
+  background-color:#68A2CA;
+ outline: none;
+}
+.newsletter-button:active{
+  background-color:#68A2CA;
+  color: #ffffff 30%;
+  outline: none;
+}
+
 .distribution{
   padding: 0;
   margin: 14px;
@@ -696,18 +725,35 @@ color: #FFFFFF;
 }
 .pressbutton-apply{
   display: block;
-    width: 191px;
-    font-family: inherit;
-    background-color: #82B3D3;
-    margin-top: 59px;
-    margin-bottom: 32px;
+  width: 191px;
+  font-family: inherit;
+  background-color: #82B3D3;
+  margin-top: 59px;
+  margin-bottom: 32px;
 }
+.pressbutton-apply{
+
+}
+.pressbutton-apply:hover {
+  background-color:#68A2CA;
+ outline: none;
+}
+.pressbutton-apply:focus {
+  background-color:#68A2CA;
+ outline: none;
+}
+.pressbutton-apply:active{
+  background-color:#68A2CA;
+  color: #ffffff 30%;
+  outline: none;
+}
+
 .pressbutton-reset{
   width: 191px;
-    display: block;
-    background-color: transparent;
-    font-family: inherit;
-    border: none;
+  display: block;
+  background-color: transparent;
+  font-family: inherit;
+  border: none;
 }
 
 .label-check{
@@ -966,10 +1012,20 @@ flex-grow: 0;
   color: #000000;
   border-radius: 5px;
 }
-
-.pagination a:hover:not(.active) {
-  background-color: #ddd;
+.pagination a.active:focus {
+  background-color:  #F2F2F2;
+  color: #000000;
   border-radius: 5px;
+  outline: none;
+}
+.pagination a:hover:not(.active) {
+  background-color: #68A2CA;
+  border-radius: 5px;
+}
+.pagination a:focus:not(.active) {
+  background-color: #68A2CA;
+  border-radius: 5px;
+  outline: none;
 }
 .pagination a.clear{
   color: #000000;
@@ -1076,6 +1132,20 @@ color: #FFFFFF;
   padding: 8px 18px;
   font-family: inherit;
 }
+.hotel-favorites:hover {
+  background-color:#68A2CA;
+ outline: none;
+}
+.hotel-favorites:focus {
+  background-color:#68A2CA;
+ outline: none;
+}
+.hotel-favorites:active{
+  background-color:#68A2CA;
+  color: #ffffff 30%;
+  outline: none;
+}
+
 .stock{
   display: flex;
     justify-content: space-between;
@@ -1168,29 +1238,12 @@ margin-right: auto;
   min-height: 40px;
 }
 
-.vkontakte{
-  background-image: url(../images/social/vkontakte.svg);
-  background-repeat: no-repeat;
-  background-position: 50%;
-}
-.telegram{
-  background-image: url(../images/social/telegram.svg);
-  background-repeat: no-repeat;
-  background-position: 50%;
-}
-.youtube{
-  background-image: url(../images/social/yotube.svg);
-  background-repeat: no-repeat;
-  background-position: 50%;
-}
 .footer-logo{
-  background-image: url(../images/svg/logo_htmlacademy.svg);
   display: flex;
   justify-content: center;
   align-items: center;
   width: 115px;
   height: 34px;
-
 }
 
 .colorless{
@@ -1287,6 +1340,15 @@ margin-right: auto;
   position: relative;
   width: 400px;
 }
+.search-field[type="text"]:hover{
+  background: #E6E6E6;
+}
+
+.search-field[type="text"]:focus{
+  border: 3px solid #83B3D3;
+  border-color: #83B3D3;
+  outline: none;
+}
 .date{
   position: absolute;
   padding: 10px;
@@ -1299,12 +1361,12 @@ margin-right: auto;
 }
 .field-info{
   margin: 0;
-    margin-left: 137px;
-    margin-top: 4px;
-    font-size: 16px;
-    line-height: 21px;
-    color: #333333;
-    padding: 0 20px;
+  margin-left: 137px;
+  margin-top: 4px;
+  font-size: 16px;
+  line-height: 21px;
+  color: #333333;
+  padding: 0 20px;
 }
 .error {
   color: #FF5757;
@@ -1380,7 +1442,20 @@ margin-right: auto;
   background-color: #82B3D3;
   color: #ffffff;
 }
-
+.knob-modal:hover {
+  background-color:#68A2CA;
+ outline: none;
+}
+.knob-modal:focus {
+  background-color:#68A2CA;
+  color: #ffffff85;
+ outline: none;
+}
+.knob-modal:active{
+  background-color:#68A2CA;
+  color: #ffffff85;
+  outline: none;
+}
 .tooltip-toggle{
   margin-left: 10px;
   display: block;
@@ -1426,4 +1501,146 @@ margin-right: auto;
 .various-group:last-child {
   position: relative;
   margin-left: 82px;
+}
+/* конец формы*/
+
+/*состояние элементов*/
+
+.knob-more:hover {
+  background-color:#615048;
+ outline: none;
+}
+.knob-more:focus {
+  background-color:#615048;
+ outline: none;
+}
+.knob-more:active{
+  background-color:#615048;
+  color: #ffffff 30%;
+  outline: none;
+}
+
+.select:hover {
+  background-color:#6C9E42;
+ outline: none;
+}
+
+.select:focus {
+  background-color:#6C9E42;
+ outline: none;
+}
+.select:active{
+  background-color:#6C9E42;
+  color: #ffffff 30%;
+  outline: none;
+}
+
+.pressbutton-reset:hover{
+  background: transparent;
+  color: #ffffff85;
+}
+
+.pressbutton-reset:focus{
+  border: 3px solid #83B3D3;
+  border-color: #83B3D3;
+  outline: none;
+  background-color:transparent;
+}
+.results-cheap:hover{
+  border: 2px solid #83B3D3;
+  border-color: #83B3D3;
+  outline: none;
+}
+
+.results-cheap:focus{
+  border: 2px solid #83B3D3;
+  border-color: #83B3D3;
+  outline: none;
+}
+
+.control-input:hover, .control-item-empty:hover ,.control-radio:hover {
+  background: #E6E6E6;
+}
+
+.control-input:focus, .control-item-empty:focus ,.control-radio:focus{
+  border: 3px solid #83B3D3;
+  border-color: #83B3D3;
+  outline: none;
+}
+
+.control-item:hover{
+    background: #fffdfd85;
+  }
+.control-item:focus{
+    border: 2px solid #83B3D3;
+    border-color: #83B3D3;
+    outline: none;
+  }
+.control-input-check:hover{
+    background: #fffdfd85;
+  }
+.label-check:hover {
+    color: #E6E6E6;
+  }
+.vkontakte:hover path , .youtube:hover path, .telegram:hover path{
+
+  fill:#68A2CA;
+
+ }
+.footer-phone:hover{
+  color:#756157 ;
+}
+.footer-phone:focus{
+  color:#756157 ;
+  border: none;
+  outline: none;
+}
+.social-item a:focus{
+ border: none;
+outline: none;
+}
+.footer-logo:hover path{
+  fill:#756157;
+}
+.logo-academy:focus {
+  fill:#756157;
+  outline: none;
+  border: none;
+}
+.elem:hover {
+  border: 2px solid #000000;
+  border-color: #000000;
+}
+.results-item a:focus {
+  border: 2px solid #68A2CA;
+  border-color: #68A2CA;
+}
+.home-page:hover path,.home-arrow:hover path{
+color:#ffffff48;
+fill:#ffffff48;
+}
+.hotel-page:hover{
+  color:#ffffff48;
+}
+.home-page:focus  {
+color:#ffffff48;
+fill:#ffffff48;
+outline: none;
+}
+.hotel-page:focus{
+  color:#ffffff48;
+  outline: none;
+}
+.modal-close:hover{
+ background: #E6E6E6;
+
+}
+
+.modal-close:focus{
+  border: 3px solid #83B3D3;
+  border-color: #83B3D3;
+  outline: none;
+}
+.minus:hover path, .plus:hover path{
+background: #000000;
 }
