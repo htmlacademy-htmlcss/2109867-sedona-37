@@ -731,9 +731,6 @@ color: #FFFFFF;
   margin-top: 59px;
   margin-bottom: 32px;
 }
-.pressbutton-apply{
-
-}
 .pressbutton-apply:hover {
   background-color:#68A2CA;
  outline: none;
@@ -985,7 +982,6 @@ flex-grow: 0;
   margin-top: 40px;
   color: #FFFFFF;
 }
-
 
 .pagination-item{
   display: flex;
