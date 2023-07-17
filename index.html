@@ -9,7 +9,7 @@
   </head>
   <body>
 
-      <header class="main-header">
+      <header class="main-header" data-test="header">
           <nav class="navigation">
             <a href="index.html" class="navigation-logo">
               <img src="images/svg/logo.svg" width="140" height="70" alt="Лого">
@@ -42,15 +42,15 @@
             </ul>
           </nav>
       </header>
-    <main class="main-container">
+    <main class="main-container" data-test="main">
     <div class="container">
-      <section class="welcome">
+      <section class="welcome" data-test="hero">
         <img src="images/svg/divider.svg" class="divider" width="1200" height="60" alt="Делитель">
         <h1 class="visually-hidden" hidden>Седона</h1>
         <img src="images/svg/welcome.svg" class="welcome-text" width="458" height="352" alt="Welcome">
       </section>
 
-      <section class="citi">
+      <section class="citi" data-test="advantages">
        <div class="container-citi">
         <h2 class="basic citi-small" >Седона — небольшой городок в Аризоне,<br>
           заслуживающий большего!</h2>
@@ -120,13 +120,13 @@
                 но и настоящего местного <br> производства!</p>
             </li>
           </ul>
-        <div class="search-hotel">
+        <div class="search-hotel" data-test="search">
             <h2 class="basic">Заинтересовались?</h2>
               <p class="undertone undertone-search">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
               <a href="#" class="knob knob-search">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
         </div>
       </section>
-          <section class="subscription">
+          <section class="subscription" data-test="subscribe">
           <div class="subscription-container">
             <h2 class="distribution">Подпишитесь на рассылку</h2>
               <p class="scout">Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
@@ -141,7 +141,7 @@
       </div>
     </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer" data-test="footer">
       <div class="container-footer">
       <ul class="social-list">
         <li class="social-item">
