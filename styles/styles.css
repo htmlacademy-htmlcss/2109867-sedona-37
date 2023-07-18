@@ -250,9 +250,13 @@ body{
 }
 
 .heart-hay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   grid-area: heart-hay;
   padding: 112px 85px;
-  gap: 10px;
+
   left: 0%;
   right: 66.67%;
   top: 0%;
@@ -274,9 +278,12 @@ body{
   grid-area: down-staw; }
 
 .heart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
    grid-area: heart;
   padding: 112px 85px;
-  gap: 10px;
   left: 33.33%;
   right: 33.33%;
   top: 0%;
@@ -285,12 +292,17 @@ body{
 }
 
 .heart-staw{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   grid-area: heart-staw;
   padding: 112px 85px;
   right: 0%;
   left: 66.67%;
   top: 0%;
   bottom: 0%;
+
   background: #83b3d31f;
 }
 .basic{
@@ -356,6 +368,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   min-height: 385px;
   background: #82B3D3;
 }
@@ -731,9 +744,6 @@ color: #FFFFFF;
   margin-top: 59px;
   margin-bottom: 32px;
 }
-.pressbutton-apply{
-
-}
 .pressbutton-apply:hover {
   background-color:#68A2CA;
  outline: none;
@@ -985,7 +995,6 @@ flex-grow: 0;
   margin-top: 40px;
   color: #FFFFFF;
 }
-
 
 .pagination-item{
   display: flex;
@@ -1262,6 +1271,16 @@ margin-right: auto;
   background-color: rgba(242, 242, 242, 0.80);
   z-index: 15;
 }
+.modal-control{
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.80);
+  z-index: 15;
+}
 .modal-main{
   position: relative;
   margin: auto;
@@ -1354,7 +1373,7 @@ margin-right: auto;
   padding: 10px;
   cursor: pointer;
   border-style: none;
-  right: 21px;
+  right: 90px;
   background-image: url(../images/svg/calendar.svg);
   background-color: transparent;
   background-repeat: no-repeat;
