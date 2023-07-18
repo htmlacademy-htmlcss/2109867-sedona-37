@@ -250,9 +250,13 @@ body{
 }
 
 .heart-hay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   grid-area: heart-hay;
   padding: 112px 85px;
-  gap: 10px;
+
   left: 0%;
   right: 66.67%;
   top: 0%;
@@ -274,9 +278,12 @@ body{
   grid-area: down-staw; }
 
 .heart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
    grid-area: heart;
   padding: 112px 85px;
-  gap: 10px;
   left: 33.33%;
   right: 33.33%;
   top: 0%;
@@ -285,12 +292,17 @@ body{
 }
 
 .heart-staw{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   grid-area: heart-staw;
   padding: 112px 85px;
   right: 0%;
   left: 66.67%;
   top: 0%;
   bottom: 0%;
+
   background: #83b3d31f;
 }
 .basic{
@@ -356,6 +368,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   min-height: 385px;
   background: #82B3D3;
 }
@@ -1360,7 +1373,7 @@ margin-right: auto;
   padding: 10px;
   cursor: pointer;
   border-style: none;
-  right: 21px;
+  right: 90px;
   background-image: url(../images/svg/calendar.svg);
   background-color: transparent;
   background-repeat: no-repeat;
