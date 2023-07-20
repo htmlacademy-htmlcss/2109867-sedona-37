@@ -65,21 +65,21 @@
             </li>
               <li class="citi citi-checker heart-hay">
                 <h3 class="citi citi-chief">Небольшая <br> площадь</h3>
-                <p class="citi citi-inferior">Все достопримечательности <br> находятся очень близко</p>
+                <p class="citi citi-inferior">Все достопримечательности  находятся очень близко</p>
             </li>
               <li class="citi citi-checker heart">
                 <h3 class="citi citi-chief">Красивая<br> Дорога</h3>
-                <p class=" citi citi-inferior">Ехать в Седону из Лас-Вегаса <br> совсем не скучно!</p>
+                <p class=" citi citi-inferior">Ехать в Седону из Лас-Вегаса  совсем не скучно!</p>
             </li>
               <li class=" citi citi-checker heart-staw">
                 <h3 class="citi citi-chief">Мало<br> туристов</h3>
-                <p class="citi citi-inferior">Большинство едет в Гранд <br> Каньон и толпится там</p>
+                <p class="citi citi-inferior">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
               <li class="citi  citi-checker down-hay">
               </li>
               <li class="citi  citi-checker down-staw">
                 <h3 class="citi citi-checker-chief">Там есть<br> мост дьявола</h3>
-                <p class="citi citi-checker-inferior">Да, по нему можно пройти!<br> Если вы осмелитесь, <br>разумеется</p>
+                <p class="citi citi-checker-inferior">Да, по нему можно пройти!<br> Если вы осмелитесь,<br> разумеется</p>
             </li>
         </ul>
       </section>
@@ -124,7 +124,7 @@
               <form class="newsletter-form"  action="https://echo.htmlacademy.ru/" method="post">
                 <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
                 <button class="button newsletter-button" type="submit">
-                  <p class="signature">Подписаться</p>
+                  <b class="signature">Подписаться</b>
                 </button>
               </form>
           </div>
@@ -181,23 +181,18 @@
         <form class="search-modal" method="post" action="https://echo.htmlacademy.ru/">
 
             <label class="calendar-icon" for="date-in">Дата Заезда: </label>
-
                   <input class="search-field" type="text" name="date-in" id="date-in" value="27 апреля 2020" placeholder="Укажите дату">
                   <button class="date" type="button">
                   <span class="visually-hidden">Изменить дату.</span>
                   </button>
                   <span class="error field-info">Мы не можем отправить вас в прошлое.</span>
 
-
-
             <label class="calendar-icon" for="date-out">Дата Выезда: </label>
-
-                <input class="search-field" type="text" name="date-out" id="date-out" value="1 сентября 2023" placeholder="Укажите дату">
+                <input class="search-field" type="text" name="date-out" required id="date-out" value="1 сентября 2023" placeholder="Укажите дату">
                 <button class="date" type="button">
                   <span class="visually-hidden">Изменить дату.</span>
                 </button>
             <span class="field-info">На эти даты есть свободные номера. Пока есть.</span>
-
 
           <span class="people-group">
             <label class="value modal-label" for="value"> Взрослые:</label>
@@ -207,7 +202,7 @@
                   <button class="minus" type="button">
                     <span class="visually-hidden">Уменьшить количество.</span>
                   </button>
-                  <input class="various-group" type="number" name="value" id="value"  value="2">
+                  <input class="various-group" type="number" name="value" required id="value"  value="2">
                   <button class="plus" type="button">
                     <span class="visually-hidden">Увеличить количество.</span>
                   </button>
@@ -228,13 +223,12 @@
                 <button class="minus" type="button">
                   <span class="visually-hidden">Уменьшить количество.</span>
                 </button>
-                <input class="various-group" type="number" name="children" id="children"  value="2">
+                <input class="various-group" type="number" name="children" required id="children"  value="2">
                 <button class="plus" type="button">
                   <span class="visually-hidden">Увеличить количество.</span>
                 </button>
               </span>
             </span>
-          </span>
           </span>
           <button class="knob knob-modal " type="submit">НАЙТИ</button>
         </form>
