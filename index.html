@@ -124,7 +124,7 @@
               <form class="newsletter-form"  action="https://echo.htmlacademy.ru/" method="post">
                 <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
                 <button class="button newsletter-button" type="submit">
-                  <span class="signature">Подписаться</span>
+                  <p class="signature">Подписаться</p>
                 </button>
               </form>
           </div>
@@ -179,30 +179,30 @@
         <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
 
         <form class="search-modal" method="post" action="https://echo.htmlacademy.ru/">
-          <span class="field-group">
+
             <label class="calendar-icon" for="date-in">Дата Заезда: </label>
-              <span class="calendar-icon">
+
                   <input class="search-field" type="text" name="date-in" id="date-in" value="27 апреля 2020" placeholder="Укажите дату">
-                  <button class="date" type="submit">
+                  <button class="date" type="button">
                   <span class="visually-hidden">Изменить дату.</span>
                   </button>
                   <span class="error field-info">Мы не можем отправить вас в прошлое.</span>
-              </span>
-          </span>
-          <span class="field-group">
+
+
+
             <label class="calendar-icon" for="date-out">Дата Выезда: </label>
-                <span class="calendar-icon">
+
                 <input class="search-field" type="text" name="date-out" id="date-out" value="1 сентября 2023" placeholder="Укажите дату">
                 <button class="date" type="button">
                   <span class="visually-hidden">Изменить дату.</span>
                 </button>
             <span class="field-info">На эти даты есть свободные номера. Пока есть.</span>
-          </span>
+
 
           <span class="people-group">
-            <label class="value" for="value"></label>
+            <label class="value modal-label" for="value"> Взрослые:</label>
             <span class="various-group">
-              <span class="modal-label">Взрослые:</span>
+
                 <span class="value-wrapper">
                   <button class="minus" type="button">
                     <span class="visually-hidden">Уменьшить количество.</span>
@@ -214,11 +214,10 @@
                 </span>
               </span>
 
-            <label class="children" for="children"></label>
+            <label class="children modal-label" for="children"> Дети:</label>
             <span class="various-group">
-              <span class="modal-label">Дети:</span>
                 <span class="tooltip">
-                  <button class="tooltip-toggle" type="submit" aria-labelledby="tooltip-label-date">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
                     <svg class="tooltip-info" width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path id="Vector" fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="white"></path>
                     </svg>
