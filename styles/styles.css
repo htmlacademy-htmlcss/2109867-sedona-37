@@ -1499,9 +1499,10 @@ body {
 }
 
 .search-field[type="text"] {
-  padding: 12px 20px;
+  padding: 10px 18px;
   position: relative;
   width: 396px;
+  border: 3px solid transparent;
 }
 
 .search-field[type="text"]:hover {
