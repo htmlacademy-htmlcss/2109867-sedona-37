@@ -215,7 +215,9 @@ body {
   margin: -4px;
   padding: 0;
 }
-
+.citi {
+  padding: 0;
+}
 .citi-box {
   width: 1200px;
   margin: 0;
@@ -249,7 +251,6 @@ body {
 }
 
 .heart-hay {
-  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -278,7 +279,6 @@ body {
 }
 
 .heart {
-  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -292,7 +292,6 @@ body {
 }
 
 .heart-staw {
-  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -350,7 +349,7 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   margin: 0 auto;
-  padding: 0;
+  padding-top: 100px;
   box-sizing: border-box;
 }
 .citi-chief {
@@ -361,14 +360,13 @@ body {
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
-  padding: 1px;
+  padding-top: 114px;
   margin: 0 auto;
   box-sizing: border-box;
 }
 
 .down-staw,
 .up-hay {
-  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -382,13 +380,12 @@ body {
   line-height: 21px;
   text-align: center;
   position: relative;
-  display: inline-block;
+  display: list-item;
   color: #000000;
-  padding: 0 72px 0 72px;
+  padding: 0 76px 0 79px;
   min-width: 232px;
   max-width: 240px;
   margin: 0;
-;
 }
 .citi-checker-inferior {
   color: #ffffff;
@@ -425,20 +422,19 @@ body {
   background-color: #ffffff;
 }
 
-.services-housing{
+.services-housing {
   background-image: url(../images/svg/housing.svg);
   background-repeat: no-repeat;
   background-position: 50% 56px;
   background-size: 75px 72px;
-
 }
-.services-burger{
+.services-burger {
   background-image: url(../images/svg/food.svg);
   background-repeat: no-repeat;
   background-position: 50% 56px;
   background-size: 75px 72px;
 }
-.services-souvenirs{
+.services-souvenirs {
   background-image: url(../images/svg/souvenirs.svg);
   background-repeat: no-repeat;
   background-position: 50% 56px;
@@ -467,9 +463,9 @@ body {
   width: 592px;
   min-height: 214px;
   margin: auto;
-  padding: 96px 304px;
+  padding: 103px 304px;
   text-align: center;
-  margin-bottom: 3px;
+  margin-bottom: -6px;
 }
 .undertone {
   font-style: normal;
@@ -480,7 +476,7 @@ body {
   color: #333333;
 }
 .undertone-search {
-  padding-bottom: 33px;
+  padding-bottom: 31px;
 }
 .explanation {
   font-weight: 400;
@@ -732,7 +728,7 @@ body {
   font-size: 18px;
   line-height: 24px;
   background: #f2f2f2;
-  border: none;
+  border: 3px solid transparent;
   box-sizing: border-box;
 }
 .start-price {
@@ -793,6 +789,7 @@ body {
   height: 20px;
   background-color: #ffff;
   border-radius: 4px;
+  border: 1x solid transparent;
 }
 .control-item-empty {
   position: absolute;
@@ -856,7 +853,7 @@ body {
   position: relative;
   height: 4px;
   margin-bottom: 13px;
-  margin-top: 43px;
+  margin-top: 38px;
   background-color: #ffffff4d;
 }
 .range-main {
@@ -967,7 +964,7 @@ body {
 .results-hotel {
   width: 160px;
   display: flex;
-  flex-wrap:nowrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
   list-style-type: none;
   margin: 0;
@@ -1408,9 +1405,8 @@ body {
   color: #000000;
   margin-right: auto;
 }
-.children{
+.children {
   margin-left: 85px;
-
 }
 
 .value-wrapper {
@@ -1471,7 +1467,7 @@ body {
   padding: 18px 77px;
   border-radius: 10px;
   width: 100%;
-  margin-top:22px;
+  margin-top: 22px;
   background-color: #82b3d3;
   color: #ffffff;
 }
@@ -1536,7 +1532,6 @@ body {
   display: flex;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
-
 }
 .various-group:last-child {
   position: relative;
@@ -1688,4 +1683,10 @@ body {
 .minus:hover path,
 .plus:hover path {
   background: #000000;
+}
+
+.control-input-check:focus {
+  border: 2px solid #83b3d3;
+  border-color: #83b3d3;
+  outline: none;
 }
