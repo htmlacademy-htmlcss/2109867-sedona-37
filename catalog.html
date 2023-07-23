@@ -29,13 +29,15 @@
           </ul>
           <ul class="navigation-list navigation-user">
             <li class="navigation-item">
-              <a href="#" class="navigation-link navigation-search"> </a>
+              <a href="#" class="navigation-link navigation-search">
+                <span class="visually-hidden">Поиск</span>
+              </a>
             </li>
             <li class="navigation-item like">
               <a href="#" class="navigation-link navigation-like">
                 <span class="favorites-item">12</span>
                 <span class="visually-hidden" aria-hidden="true"
-                  >Количество гостиниц в избранном</span
+                  >Количество гостиниц в избранном.</span
                 >
               </a>
             </li>
@@ -53,6 +55,9 @@
             <ol class="breadcrumbs-main">
               <li class="breadcrumbs">
                 <a href="index.html" class="home-page">
+                  <span class="visually-hidden">
+                    Домашняя страница.
+                  </span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="13"
@@ -97,35 +102,32 @@
                   <li class="infrastructure-filter list-item">
                     <label class="control">
                       <input
-                        class="control-input-check visually-hidden"
+                        class="control-input-check"
                         type="checkbox"
                         name="pool"
                         checked
                       />
-                      <span class="control-item"></span>
                       <span class="label-check">Бассейн</span>
                     </label>
                   </li>
                   <li class="infrastructure-filter list-item">
                     <label class="control">
                       <input
-                        class="control-input-check visually-hidden"
+                        class="control-input-check"
                         type="checkbox"
                         name="parking"
                         checked
                       />
-                      <span class="control-item"></span>
                       <span class="label-check">Парковка</span>
                     </label>
                   </li>
                   <li class="infrastructure-filter list-item">
                     <label class="control">
                       <input
-                        class="control-input-check visually-hidden"
+                        class="control-input-check "
                         type="checkbox"
                         name="Wi-Fi"
                       />
-                      <span class="control-item-empty"></span>
                       <span class="label-check"> Wi-Fi</span>
                     </label>
                   </li>
@@ -137,37 +139,34 @@
                   <li class="kind-filter list-item">
                     <label class="control">
                       <input
-                        class="control-input-check visually-hidden"
+                        class="control-input-check "
                         type="radio"
                         name="kind-filter"
                         value="kind-filter"
                         checked
                       />
-                      <span class="control-radio-full"></span>
                       <span class="label-check">Гостиница</span>
                     </label>
                   </li>
-                  <li class="kind-filter list-item">
+                  <li class="kind-filter list-item radio-empty">
                     <label class="control">
                       <input
-                        class="control-input-check visually-hidden"
+                        class="control-input-check "
                         type="radio"
                         name="kind-filter"
                         value="kind-filter"
                       />
-                      <span class="control-radio"></span>
                       <span class="label-check">Мотель</span>
                     </label>
                   </li>
-                  <li class="kind-filter list-item">
+                  <li class="kind-filter list-item radio-vacant">
                     <label class="control">
                       <input
-                        class="control-input-check visually-hidden"
+                        class="control-input-check"
                         type="radio"
                         name="kind-filter"
                         value="kind-filter"
                       />
-                      <span class="control-radio"></span>
                       <span class="label-check">Апартаменты</span>
                     </label>
                   </li>
@@ -210,7 +209,7 @@
                 <button class="pressbutton-apply knob" type="submit">
                   Применить
                 </button>
-                <button class="pressbutton-reset knob" type="submit">
+                <button class="pressbutton-reset knob" type="reset">
                   Сбросить
                 </button>
               </div>
@@ -228,6 +227,7 @@
               <ul class="results-hotel">
                 <li class="results-item results-select">
                   <a href="#">
+                    <span class="visually-hidden">Отображение таблицой.</span>
                     <svg
                       class="elem table"
                       xmlns="http://www.w3.org/2000/svg"
@@ -244,6 +244,7 @@
                 </li>
                 <li class="results-item">
                   <a href="#">
+                    <span class="visually-hidden">Отображение по одному.</span>
                     <svg
                       class="elem"
                       xmlns="http://www.w3.org/2000/svg"
@@ -260,6 +261,7 @@
                 </li>
                 <li class="results-item">
                   <a href="#">
+                    <span class="visually-hidden">Отображение списком.</span>
                     <svg
                       class="elem"
                       xmlns="http://www.w3.org/2000/svg"
@@ -448,8 +450,8 @@
                   id="newsletter-email"
                   required
                 />
-                <button class="button newsletter-button" type="submit">
-                  <p class="signature">Подписаться</p>
+                <button class="button newsletter-button signature" type="submit">
+                Подписаться
                 </button>
               </form>
             </div>
