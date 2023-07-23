@@ -806,7 +806,7 @@ body {
 }
 
 .control-input {
-  padding: 11px 40px 10px 18px;
+  padding: 10px 40px 10px 18px;
   width: 143px;
   font-family: inherit;
   font-weight: 700;
@@ -961,7 +961,7 @@ body {
 
 .toggle-max {
   top: -8px;
-  right: -13px;
+  right: -11px;
   cursor: pointer;
 }
 
@@ -1458,7 +1458,7 @@ body {
   line-height: 22px;
   font-weight: 700;
   color: #000;
-  margin-right: -66px;
+  margin-right: -70px;
 }
 
 .search-field {
@@ -1476,14 +1476,18 @@ body {
 }
 
 .search-field[type="text"] {
-  padding: 10px 18px;
+  padding: 9px 17px;
   position: relative;
-  width: 396px;
+  width: 400px;
   border: 3px solid transparent;
 }
 
 .search-field[type="text"]:hover {
   background: #e6e6e6;
+}
+
+.first-date {
+  padding-right: 5px;
 }
 
 .search-field[type="text"]:focus {
@@ -1494,7 +1498,7 @@ body {
 
 .date {
   padding: 10px;
-  margin: -124px;
+  margin: -128px;
   cursor: pointer;
   border-style: none;
   background-image: url(../images/svg/calendar.svg);
@@ -1506,7 +1510,7 @@ body {
 .field-info {
   margin: 0;
   margin-left: 137px;
-  margin-top: -17px;
+  margin-top: -18px;
   font-size: 16px;
   line-height: 21px;
   color: #333;
@@ -1624,7 +1628,7 @@ body {
 }
 
 .tooltip-toggle {
-  margin-top: 12px;
+  margin-top: 13px;
   margin-left: 10px;
   display: block;
   width: 26px;
@@ -1644,10 +1648,10 @@ body {
   line-height: 20px;
   font-weight: normal;
   color: #fff;
-  padding: 20px 19px 23px 22px;
+  padding: 21px 19px 23px 22px;
   width: 215px;
   position: absolute;
-  top: 51px;
+  top: 53px;
   left: -106px;
 }
 
